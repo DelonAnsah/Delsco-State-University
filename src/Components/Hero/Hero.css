@@ -1,13 +1,13 @@
 .video-container{
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .hero-video{
   width: 100%;
   height: auto;
-  object-fit: cover;
 }
 
 .hero-text{
@@ -28,6 +28,7 @@
   right: 20px;
   bottom: 20px;
   cursor: pointer;
+  z-index: 2;
 }
 .pulse{
   animation: pulse 1.5s infinite;

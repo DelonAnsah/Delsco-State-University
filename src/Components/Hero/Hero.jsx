@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <div className='video-container'>
-      <video ref={videoRef} className='hero-video' src={Hero_video}  controls loop autoPlay muted></video>
+      <video ref={videoRef} className='hero-video' src={Hero_video}   loop autoPlay muted></video>
       {
         !isplaying && (
         <img className={`hero-play ${isplaying? '' : 'pulse'}`} src={hero_play}alt="play" onClick={handlePlayPause} />
