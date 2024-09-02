@@ -1,11 +1,12 @@
 import React from 'react'
 import './Header.css'
-import logo from '../../assets/DSU logo1.png'
+import logo from '../../assets/DELSO 2.png'
 import visit_icon from '../../assets/icon-header-visit.png'
 import apply_icon from '../../assets/icon-header-apply.png'
 import give_icon from '../../assets/icon-header-give.png'
 import search_icon from '../../assets/icon-header-search.png'
 import collapse_down from '../../assets/Collapse-down.png'
+
 
 const Header = () => {
   return (
@@ -37,7 +38,7 @@ const Header = () => {
         </div>
       </div>
       </div>
-      
+
     </div>
   )
 }

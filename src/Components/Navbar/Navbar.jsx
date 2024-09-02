@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import logo from '../../assets/DSU logo1.png'
 
 
 const Navbar = () => {
@@ -28,6 +27,7 @@ const Navbar = () => {
   return (
     <>
       <nav className='navbar' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className='navbar-container'>
         {navButtons.map((button, index) => (
           <div key={index} className='nav-item' >
             <button className='nav-button'><b>{button.label}</b></button>
@@ -42,6 +42,7 @@ const Navbar = () => {
             )}
           </div>
         ))}
+        </div>
       </nav>
     </>
 

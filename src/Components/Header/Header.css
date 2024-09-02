@@ -12,6 +12,7 @@
 }
 .logo{
   text-align: left;
+  padding-top: 10px; 
 }
 .Right-items{
   display: flex;
