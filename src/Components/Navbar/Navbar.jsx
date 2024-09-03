@@ -21,10 +21,10 @@ const Navbar = () => {
     {label: "ALUMNI & FRIENDS ", dropdown: ["Connect", "Give", "Resources", "About"]},
     {label: "ACADEMICS", dropdown: ["Colleges", "Library", "Programs", "Registrar"]},
     {label: "RESEARCH & INNOVATION", dropdown: ["Research At DSU", "Horn Entrepreneurship", "STAR Campus", "Innovation Getaway"]},
-    {label: "ATHLETICS", dropdown: ["BlueHens.com"]}
+    {label: "ATHLETICS", dropdown: ["GreenTiger.com"]}
   ];
 
-  return (
+  return ( 
     <>
       <nav className='navbar' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div className='navbar-container'>
