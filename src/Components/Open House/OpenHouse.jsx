@@ -6,13 +6,13 @@ import openhouse2 from '../../assets/Gallery_3.jpg'
 const OpenHouse = () => {
   return (
     <>
-    <div className='panel'>
+    <div className='openHouse-panel'>
       <div className='container'>
         <div className='text-component' >
           <h2 style={{textAlign: 'center'}}> 
             <span className='first-heading'>JOIN US FOR GREEN AND GOLDEN OPEN HOUSE</span>
           </h2>
-          <h4 className='second-heading'>Visit our campus and picture yourself as a proudRed Tiger</h4>
+          <h4 className='second-heading'>Visit our campus and picture yourself as a proud Green Tiger</h4>
           <h4 className='third-heading'>Register for our Green and Golden open house to hear from faculty representing 150+ majors, explore life on campus and speak to staff from admissions, study abroad, Honors College <b>-</b>and more!  </h4>
         </div>
         <div className='row'>

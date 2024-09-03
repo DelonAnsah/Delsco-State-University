@@ -1,0 +1,147 @@
+.schoolRank-panel{
+  width: 100%;
+  background-color: #FFD700;
+  padding: 100px 0;
+}
+
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.textComponent{
+  margin-top: 20px;
+  padding: 15px;
+}
+h2{
+  margin-bottom: 20px;
+  color: #333333;
+}
+h4{
+  color: #434343;
+  font-size: 25px;
+  padding: 5px 0;
+}
+.slideshow-container{
+ display: flex;
+ align-items: center;
+ position: relative;
+}
+.slider{
+  display: flex;
+  overflow: hidden;
+  width: calc(100% - 200px);
+}
+.mySlides{
+  flex: 0 0 33.33%;
+  width: 350px;
+  margin-right: 25px;
+  height: 200px;
+  text-align: center;
+}
+.one{
+  background-color: rgb(0, 0, 0, 0.6);
+  color: #ddd;
+}
+.two{
+  background-color: #ddd;
+  color: #004D40;
+}
+.three{
+  background-color: #004D40;
+  color: #ddd;
+}
+.four{
+  background-color: #333333;
+  color: #ddd;
+}
+.five{
+  background-color: #D1F2EB;
+  color: #FF6F61;
+}
+.six{
+  background-color: #2ECC71;
+  color: #ddd;
+}
+.seven{
+  background-color: #434343;
+  color: #ddd;
+}
+.eight{
+  background-color: #004D40;
+  color: #ddd;
+}
+.nine{
+  background-color: #ddd;
+  color: #004D40;
+}
+p{
+  text-align: center;
+}
+.title{
+  font-size: 50px;
+  line-height: 74px;
+  font-family: 'greycliff-bold';
+}
+.content{
+  font-size: 28px;
+  line-height: 38px;
+}
+.prev,
+.next{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #333333;
+  cursor: pointer;
+}
+.prev{
+  right: auto;
+  left: 0;
+}
+.dot-container{
+  text-align: center;
+  padding: 20px;
+}
+.dot{
+  bottom: 0;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  background-color:#004D40 ;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot.active{
+  background-color: #FFD700;
+  opacity: 1;
+}
+.announcement{
+  background-color: #ddd;
+  color: #004D40;
+  line-height: 150%;
+  margin-top: 20px;
+}
+.announcement h3{
+  font-size: 20px;
+  text-align: center;
+}
+.announcement-head a{
+  position: relative;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+}
+.uni-icon{
+  position: absolute;
+  top: 12px;
+  left: 300px;
+}
