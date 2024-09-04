@@ -50,9 +50,11 @@ const SchoolRank = () => {
           <h4 className='rank'>Delsco State University continues to rise in national prominence, with its undergraduate, graduate , and online programs receiving increasing recognition for excellence, as reflected in the lastest rankings. </h4>
          </div>
          <div className='slideshow-container'>
+          <div>
           <button className='prev' type='button' onClick={prevSlide}>
             <img src={prev_icon} alt="" />
           </button>
+          </div>
           <div className='slider'>
             {getDisplayedSlides().map((slide, index) => (
               <div key={index} className={`mySlides ${slide.style}`} >
@@ -65,9 +67,11 @@ const SchoolRank = () => {
               </div>
             ))}
            </div>
+           <div>
            <button className='next' type='button' onClick={nextSlide}>
             <img src={next_icon} alt="" />
            </button>
+           </div>
           </div>
           <div className="dot-container">
           {Array.from({length: maxSlideIndex + 1 }).map((_, index) => (
