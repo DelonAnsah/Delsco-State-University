@@ -1,4 +1,60 @@
 .parent-panel{
   width: 100%;
-  background-color:#D1F2EB ;
+  background-color:#eee ;
+  padding: 100px 0 100px 0;
+}
+.parent-container{
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.parent-component{
+  margin-top: 20px;
+  padding: 15px;
+}
+.parent-row{
+  display: flex;
+}
+.parent-column{
+  flex: 50%;
+}
+.parent-column h2{
+  font-size: 30px;
+  margin: 5px 0;
+  font-weight: normal;
+}
+.parent-column h3{
+  font-size: 26px;
+  font-weight: 400;
+  color: #434343; 
+  margin: 5px 0;
+  line-height: 36px;
+}
+.parent-column h4{
+  font-size: 20px;
+  color: #434343;
+  margin: 5px 0;
+  line-height: normal;
+}
+.parent-button{
+  background-color: #fff;
+  font-size: 20px;
+  color: #145A32;
+  font-weight: normal;
+  border: 1px solid #145A32;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 22px;
+}
+.parent-button:hover{
+  background-color: #145A32;
+  color: #fff;
+}
+.parent-column img{
+  width: 100%;
+  max-width: none;
+  display: block;
 }
