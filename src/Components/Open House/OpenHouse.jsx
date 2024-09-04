@@ -27,12 +27,12 @@ const OpenHouse = () => {
             </p>
             <div className='button-links'>
               <h3>
-                <a className='link' href="">VIEW AGENDA &#9654; </a>
+                <a className='link' href="">VIEW AGENDA &gt; </a>
               </h3>
             </div>
             <div className='button-links'>
               <h3>
-                <a className='link' href="">REGISTER &#9654; </a>
+                <a className='link' href="">REGISTER &gt; </a>
               </h3>
             </div>
           </div>

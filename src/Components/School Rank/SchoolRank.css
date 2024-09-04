@@ -24,13 +24,12 @@ h4{
   padding: 5px 0;
 }
 .slideshow-container{
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-  margin-left: 10px;
-  margin-right: 10px;
- display: flex;
- justify-content: center;
- align-items: center;
- position: relative;
 }
 .slider{
   display: flex;
@@ -39,7 +38,8 @@ h4{
 }
 .mySlides{
   flex: 0 0 33.33%;
-  width: 300px;
+  justify-content: center;
+  max-width: 300px;
   margin-right: 25px;
   height: 200px;
   text-align: center;
@@ -86,11 +86,12 @@ p{
   text-align: center;
 }
 .title{
+  text-align: center;
   font-size: 50px;
   line-height: 74px;
-  font-family: 'greycliff-bold';
 }
 .content{
+  text-align: center;
   font-size: 28px;
   line-height: 38px;
 }
@@ -101,8 +102,9 @@ p{
   right: 0;
   transform: translateY(-50%);
   border-radius: 50%;
+  border: 3px solid #ddd;
   padding: 5px;
-  background-color: #333333;
+  background-color: rgb(0, 0, 0, 0.6);
   cursor: pointer;
 }
 .prev{
@@ -125,11 +127,11 @@ p{
   transition: background-color 0.6s ease;
 }
 .dot.active{
-  background-color: #FFD700;
+  background-color: #fff;
   opacity: 1;
 }
 .announcement{
-  background-color: #ddd;
+  background-color: white;
   color: #004D40;
   line-height: 150%;
   margin-top: 20px;

@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import OpenHouse from './Components/Open House/OpenHouse'
 import SchoolRank from './Components/School Rank/SchoolRank'
+import Visit from './Components/Visit/Visit'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Hero/>
       <OpenHouse/>
       <SchoolRank/>
+      <Visit/>
     </div>
   )
 }

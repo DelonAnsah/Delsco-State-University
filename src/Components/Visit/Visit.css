@@ -1,0 +1,95 @@
+.visit-panel{
+  width: 100%;
+  background: white;
+  padding: 100px 0 100px 0;
+}
+.visit-container{
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.visit-component{
+  margin-top: 20px;
+  padding: 15px;
+}
+.visit-firstheading{
+  color: #004D40;
+  text-align: center;
+}
+.visit-secondheading,
+.visit-thirdheading{
+  color: #434343;
+  font-size: 20px;
+  margin: 5px 0;
+  text-align: center;
+}
+.visit-row{
+  display: flex;
+}
+.visit-column{
+  flex: 33.3%;
+  padding: 15px;
+  position: relative;
+}
+.visit-column img{
+  width: 350px;
+  height: 234px;
+}
+.visit-button{
+  display: block;
+  position: absolute;
+  right: 50%;
+  bottom: 25px;
+  width: 34px;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 8px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  cursor: pointer;
+}
+.visit-imageText{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+.visit-imageText p{
+  color: #fff;
+  padding: 0 10px;
+  font-size: 18px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  text-shadow: 3px 4px 5px rgba(50, 50, 50, 0.53);
+}
+.visit-imageText h4{
+  color: #fff;
+  font-size: 22px;
+  line-height: 30px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px;
+  text-shadow: 3px 4px 5px rgba(50, 50, 50, 0.53);
+}
+
+.apply{
+  background-color: #004D40;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+.admission{
+  background-color: #333;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+.major{
+  background-color: #2ECC71;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
