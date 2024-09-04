@@ -1,12 +1,47 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './SchoolRank.css'
 import next_icon from '../../assets/Forward-Icon.png'
 import prev_icon from '../../assets/Prev-icon.png'
 import university_icon from '../../assets/university.png'
 
 const SchoolRank = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  const slides = [
+    { id: 1, title: '#1', content: 'undergraduate Computer Science Program', style: 'one' },
+    { id: 2, title: '#5', content: 'undergraduate Business Program', style: 'two' },
+    { id: 3, title: '#15', content: 'undergraduate Mechanical Engineering Program', style: 'three' },
+    { id: 4, title: '#8', content: 'Best Graduate School for Business Program', style: 'four' },
+    { id: 5, title: '#22', content: 'Best Graduate School for Education', style: 'five' },
+    { id: 6, title: '#40', content: 'Best Graduate School for Engineering', style: 'six' },
+    { id: 7, title: '#20', content: 'Online MBA Program', style: 'seven' },
+    { id: 8, title: '#50', content: 'Online Masters in Computer Science Program', style: 'eight' },
+    { id: 9, title: '#20', content: 'Online Masters in Education Program', style: 'nine' },
+  ];
+
+  const totalSlides = slides.length;
+  const maxSlidesToShow = 3;
+  const maxSlideIndex = Math.ceil(totalSlides / maxSlidesToShow) - 1;
+
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === maxSlideIndex ? 0 : prevSlide + 1));
+  }
+
+  const prevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === 0 ? maxSlideIndex : prevSlide - 1));
+  }
    
+  const getDisplayedSlides = () => {
+    const start = currentSlide * maxSlidesToShow;
+    return slides.slice(start, start + maxSlidesToShow);
+  }
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 10000);
+    return () => clearInterval(interval);
+  },[currentSlide]);
+
+
   return (
     <div className='schoolRank-panel'>
       <div className='container'>
@@ -15,96 +50,41 @@ const SchoolRank = () => {
           <h4 className='rank'>Delsco State University continues to rise in national prominence, with its undergraduate, graduate , and online programs receiving increasing recognition for excellence, as reflected in the lastest rankings. </h4>
          </div>
          <div className='slideshow-container'>
-          <button className='prev' type='button'><img src={prev_icon} alt="" /></button>
-          <button className='next' type='button'><img src={next_icon} alt="" /></button>
+          <button className='prev' type='button' onClick={prevSlide}>
+            <img src={prev_icon} alt="" />
+          </button>
           <div className='slider'>
-            <div className='mySlides one'>
-                <div className="title">
-                  <p style={{textAlign:'center'}}>#1</p>
+            {getDisplayedSlides().map((slide, index) => (
+              <div key={index} className={`mySlides ${slide.style}`} >
+                <div className='title'>
+                  <p>{slide.title}</p>
                 </div>
-                <div className='content'>
-                  <p style={{textAlign:'center'}}>Undergraduate Computer Science Program</p>
-                </div>
-            </div>
-            <div className='mySlides two'>
-                <div className="title">
-                  <p style={{textAlign:'center'}}>#5</p>
-                </div>
-                <div className='content'>
-                  <p>Undergraduate Business Program </p>
-                </div>
-            </div>
-            <div className='mySlides three'>
-                <div className="title">
-                  <p style={{textAlign:'center'}}>#15</p>
-                </div>
-                <div className='content'>
-                  <p>Undergraduate Mechanical Engineering Program</p>
-                </div>
-            </div>
-            <div className='mySlides four'>
-                <div className="title">
-                  <p style={{textAlign:'center'}}>#8</p>
-                </div>
-                <div className='content'>
-                  <p>Best Graduate School for Business Program </p>
-                </div>
-            </div>
-            <div className='mySlides five'>
-                <div className="title">
-                  <p style={{textAlign:'center'}}>#22</p>
-                </div>
-                <div className='content'>
-                  <p>Best Graduate School for Education</p>
-                </div>
+                  <div className='content'>
+                    <p>{slide.content}</p>
+                  </div>
               </div>
-              <div className='mySlides six'>
-                <div className="title">
-                  <p style={{textAlign:'center'}}>#40</p>
-                </div>
-                <div className='content'>
-                  <p>Best Graduate School for Engineering</p>
-                </div>
-              </div>
-              <div className='mySlides seven'>
-                <div className="title">
-                  <p>#20</p>
-                </div>
-                <div className='content'>
-                  <p>Online MBA program</p>
-                </div>
-              </div>
-              <div className='mySlides eight'>
-                <div className="title">
-                  <p>#50</p>
-                </div>
-                <div className='content'>
-                  <p>Online Master's in Computer Science</p>
-                </div>
-              </div>
-              <div className='mySlides nine'>
-                <div className="title">
-                  <p>#70</p>
-                </div>
-                <div className='content'>
-                  <p>Online Masters in Education Program</p>
-                </div>
-            </div>
+            ))}
+           </div>
+           <button className='next' type='button' onClick={nextSlide}>
+            <img src={next_icon} alt="" />
+           </button>
           </div>
           <div className="dot-container">
-          <span className='dot'></span>
-          <span className='dot'></span>
-          <span className='dot'></span>
+          {Array.from({length: maxSlideIndex + 1 }).map((_, index) => (
+            <span  
+              key={index}
+              className={`dot ${currentSlide === index ? 'active' : ''}`}
+              onClick={() => setCurrentSlide(index)}
+            ></span>
+          ))}
          </div>
-         </div>
-        <div className='announcement'>
+         <div className='announcement'>
           <h3 className='announcement-head'>
             <a href=""><img className='uni-icon' src={university_icon} alt="" /> READ THE LATEST RANKINGS ANNOUNCEMENT &gt;</a>
           </h3>
         </div>
+         </div>
       </div>
-      
-    </div>
   )
 }
 
