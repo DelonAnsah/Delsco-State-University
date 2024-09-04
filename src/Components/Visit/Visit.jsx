@@ -40,6 +40,7 @@ const Visit = () => {
           </div>
           </div>
           <div className="visit-column">
+            <div className="vlink">
             <div className="apply">
               <a href="">APPLY TODAY &gt;</a>
             </div>
@@ -48,6 +49,7 @@ const Visit = () => {
             </div>
             <div className="major">
              <a href="">MAJOR FINDER &gt;</a>
+            </div>
             </div>
           </div>
         </div>

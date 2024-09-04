@@ -74,10 +74,17 @@
   padding: 0 10px;
   text-shadow: 3px 4px 5px rgba(50, 50, 50, 0.53);
 }
-
+.vlink a{
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+}
 .apply{
   background-color: #004D40;
   font-size: 20px;
+  line-height: 150%;
   text-align: center;
   color: #fff;
 }
@@ -85,11 +92,13 @@
   background-color: #333;
   font-size: 20px;
   text-align: center;
+  margin-top: 20px;
   color: #fff;
 }
 .major{
   background-color: #2ECC71;
   font-size: 20px;
   text-align: center;
+  margin-top: 20px;
   color: #fff;
 }
