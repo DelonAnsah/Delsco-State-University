@@ -6,6 +6,7 @@ import OpenHouse from './Components/Open House/OpenHouse'
 import SchoolRank from './Components/School Rank/SchoolRank'
 import Visit from './Components/Visit/Visit'
 import Parent from './Components/Parent/Parent'
+import News from './Components/News/News'
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
       <SchoolRank/>
       <Visit/>
       <Parent/>
+      <News/>
+
     </div>
   )
 }

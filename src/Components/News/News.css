@@ -1,0 +1,128 @@
+.news-panel{
+  width: 100%;
+  background-color: #004D40;
+  padding: 100px 0 100px 0;
+}
+.news-container{
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.parent-component{
+  margin-top: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.parent-component h2{
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 5px 0; 
+}
+.news-row{
+  display: flex;
+
+}
+.news-columns{
+flex: 50%;
+}
+.news1{
+  padding: 10px;
+  margin-right: 30px;
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+}
+.footer{
+  position: relative;
+}
+.news1 .footer .title{
+  word-wrap: break-word;
+}
+.news1 .footer .title p{
+  font-size: 18px;
+  text-align: left;
+  color: #434343;
+  margin-bottom: 0;
+}
+.news1 .footer .content{
+  word-wrap: break-word;
+  display: inline;
+}
+.news1 .footer .content p{
+  font-size: 18px;
+  text-align: left;
+  color: #434343;
+  margin-bottom: 0;
+  line-height: 1.3em;
+}
+.calloutLink{
+  display: inline-block;
+  color: #004D40;
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+}
+.calloutLink a{
+  text-decoration: none;
+  color: #004D40;
+}
+.calloutLink a:hover{
+  text-decoration: underline;
+}
+.news-today{
+  margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.news-story{
+  background: rgb(255, 210, 0);
+  border: 2px solid rgb(255, 210, 0);
+  padding: 10px 20px;
+  border-radius: 35px;
+  color: #004D40 !important;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.dsudailynews{
+  padding: 0px 15px;
+}
+.dsudailynews ul li{
+  list-style-type: none;
+  padding: 0;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  color: #fff;
+}
+.dsudailynews ul li:hover{
+  text-decoration: underline;
+}
+.news-link{
+   margin-top: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.news-more{
+  text-align: center;
+  margin-top: 30px;
+}
+.news-button{
+  background: rgba(51, 51, 51, 0.5);
+  font-size: 20px;
+  color: #fff;
+  font-weight: normal;
+  border: 1px solid #fff;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 22px;
+}
+.news-button:hover{
+  background-color: #004D40;
+  color: #fff;
+}

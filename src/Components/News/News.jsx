@@ -1,6 +1,6 @@
 import React from 'react'
 import './News.css'
-import newslogo from '../../assets/News Logo.jpg'
+import newslogo from '../../assets/News.png'
 import basketball from '../../assets/Gallery_4.jpg'
 
 const News = () => {
@@ -10,9 +10,10 @@ const News = () => {
         <div className="parent-component">
           <img src={newslogo} alt="DSU Daily" />
           <h2>The lastest news from Delsco State University</h2>
+          </div>
           <div className="news-row">
-            <div className="news-column">
-              <a href=""><img src={basketball} alt="" width='100%'  /></a>
+            <div className="news-column news1">
+              <a href=""><img className='news-image' src={basketball} alt="" width='100%'  /></a>
               <div className="footer">
                 <div className="title">
                   <p>DSU Men Basketball Team </p>
@@ -25,10 +26,10 @@ const News = () => {
                 </div>
               </div>
             </div>
-            <div className="news-column">
-              <div>
-                <h2>Today's Stories</h2>
-              </div>
+            <div className="news-column new2">
+              <div className="news-today">
+                <h2 className='news-story'>Today's Stories</h2>
+              </div >
               <div className='dsudailynews'>
                 <ul>
                   <li><a href="">DSU Celebrates Record-Breaking Year of Research Funding and Innovation</a></li>
@@ -41,12 +42,11 @@ const News = () => {
                   <li><a href="">Award-Winning Faculty Member Receives Prestigious National Teaching Award</a></li>
                 </ul>
               </div>
-              <div>
-                <p><b><a href="">More DSU News</a></b></p>
+              <div className="news-link" >
+                <p className='News-more'><button className='news-button'><a href="">More DSU News &gt;</a></button></p>
               </div>
             </div>
           </div>
-        </div>
       </div>    
     </div>
   )
