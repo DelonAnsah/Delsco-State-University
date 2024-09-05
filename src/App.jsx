@@ -7,6 +7,7 @@ import SchoolRank from './Components/School Rank/SchoolRank'
 import Visit from './Components/Visit/Visit'
 import Parent from './Components/Parent/Parent'
 import News from './Components/News/News'
+import Event from './Components/Event/Event'
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
       <Visit/>
       <Parent/>
       <News/>
-
+      <Event/>
     </div>
   )
 }
