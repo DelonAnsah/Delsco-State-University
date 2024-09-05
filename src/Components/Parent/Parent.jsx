@@ -11,7 +11,7 @@ const Parent = () => {
             <h2>PARENTS AND FAMILY WEEKEND</h2>
             <h3>October 19 - October 22, 2024</h3>
             <h2>&nbsp;</h2>
-            <h4>The annual Parents and Family Weekend returns this fall, and provides families with an apportunity to visit their students, create life-long memories and participate in a wide variety of activities on campus.</h4>
+            <p>The annual Parents and Family Weekend returns this fall, and provides families with an apportunity to visit their students, create life-long memories and participate in a wide variety of activities on campus.</p>
             <h4>&nbsp;</h4>
             <h4>
               <button  className='parent-button' type='button'>

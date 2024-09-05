@@ -14,14 +14,17 @@
 }
 .parent-row{
   display: flex;
+  justify-content: space-between;
 }
 .parent-column{
-  flex: 50%;
+  flex-basis: 48%;
 }
 .parent-column h2{
-  font-size: 30px;
+  color: #434343 !important;
+  font-family: sans-serif;
+  font-size: 30px !important;
   margin: 5px 0;
-  font-weight: normal;
+  font-weight: bold;
 }
 .parent-column h3{
   font-size: 26px;
@@ -30,7 +33,7 @@
   margin: 5px 0;
   line-height: 36px;
 }
-.parent-column h4{
+.parent-column p{
   font-size: 20px;
   color: #434343;
   margin: 5px 0;
@@ -54,7 +57,6 @@
   color: #fff;
 }
 .parent-column img{
-  width: 100%;
   max-width: none;
   display: block;
 }

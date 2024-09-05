@@ -7,7 +7,7 @@ const Event = () => {
     <div className='event-panel'>
       <div className="event-container">
         <div className="event-row">
-          <div className="event-column">
+          <div className="event-leftcolumn">
             <div className="event-text">
               <h2>Campus Events</h2>
               <div className='events-widget'>
@@ -20,20 +20,22 @@ const Event = () => {
                         </a>
                       </div>
                       <div className='event-details'>
-                        <span>Oct 1, 2024 10am </span>
-                        <a href="">
+                        <span >Oct 1, 2024 10am </span>
+                        <br />
+                        <a className='event' href="">
                           Homecoming Week Kickoff
                         </a>
                       </div>
                     </li>
                     <li className='event-item'>
-                      <div className='icon-col'>
+                      <div className='icon-col icon'>
                         <a href="#">
                           <i class="fa fa-calendar"></i>
                         </a>
                       </div>
-                      <div className='event-details'>
+                      <div className='event-details more'>
                         <span>Oct 5, 2024 2pm </span>
+                        <br />
                         <a href="#">
                           Guest Lecture: The Future of AI
                         </a>
@@ -47,18 +49,21 @@ const Event = () => {
                       </div>
                       <div className='event-details'>
                         <span>Oct 12, 2024 9pm </span>
+                        <br />
                         <a href="#">
                           Alumni Networking Dinner
                         </a>
                       </div>
-                    </li><li className='event-item'>
-                      <div className='icon-col'>
-                        <a href="#">
+                    </li>
+                    <li className='event-item'>
+                      <div className='icon-col icon'>
+                        <a  href="#">
                           <i class="fa fa-calendar"></i>
                         </a>
                       </div>
-                      <div className='event-details'>
+                      <div className='event-details more'>
                         <span>Oct 19, 2024 1pm </span>
+                        <br />
                         <a href="#">
                           Parent and Family Weekend
                         </a>
@@ -70,8 +75,9 @@ const Event = () => {
                           <i class="fa fa-calendar"></i>
                         </a>
                       </div>
-                      <div className='event-details'>
+                      <div className='event-details '>
                         <span>Oct 31, 2024 3pm </span>
+                        <br />
                         <a href="#">
                           Fall Music Festival
                         </a>
@@ -83,12 +89,12 @@ const Event = () => {
             </div>
             <div className='events-calendar'>
               <h3>
-                <a href="#">Events Calendar &gt; </a>
+                <a href="#"><i class="fa fa-calendar"></i> Events Calendar &gt; </a>
               </h3>
             </div>
           </div>
-          <div className="event-column">
-            <img src={eventimage} alt="" width='100%'/>
+          <div className="event-rightcolumn">
+            <img src={eventimage} alt="" width='100%' />
           </div>
         </div>
       </div>
