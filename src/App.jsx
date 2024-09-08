@@ -8,6 +8,8 @@ import Visit from './Components/Visit/Visit'
 import Parent from './Components/Parent/Parent'
 import News from './Components/News/News'
 import Event from './Components/Event/Event'
+import Equity from './Components/Equity/Equity'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
       <Parent/>
       <News/>
       <Event/>
+      <Equity/>
+      <Footer/>
     </div>
   )
 }

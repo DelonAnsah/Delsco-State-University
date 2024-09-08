@@ -1,0 +1,104 @@
+.footer-panel{
+  width: 100%;
+  background: white;
+  border-top: 2px solid #FFD700;
+}
+.footer-container{
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.footer-header{
+  margin: 0;
+  position: relative;
+  padding: 5px 0;
+}
+.footer-logo{
+  position: absolute;
+  width: 60px;
+  left: 0;
+  top: -20px;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+.footer-logo img{
+  border-radius: 20%;
+}
+.carousel{
+  display: flex;
+  margin-bottom: 7px;
+}
+.carousel-item{
+ flex: 33.33%;
+ margin: 10px;
+ position: relative;
+}
+.carousel-content{
+  position: absolute;
+  width: 100%;
+  bottom: 3px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 10px 0;
+}
+.carousel-content p{
+  font-size: 14px;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.dsu-home{
+  font-family: 'poppins-light';
+}
+.fa-home{
+  font-size: 24px;
+  color: #2ECC71;
+}
+.dsu-home{
+  color: #434343;
+}
+.footer-panel hr{
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+.footer-rowlinks{
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer-columnlinks{
+  flex: 25%;
+}
+.linksheader h3{
+  color: #222;
+  font-size: 24px;
+  font-family: 'poppins-light'
+}
+.linksheader ul{
+  list-style: none;
+  font-size: 14px;
+  font-family: 'poppins-light';
+}
+.linksheader ul li{
+  color: #00CC66;
+  font-size: 14px;
+  margin: 7.5px 0px ;
+}
+#li{
+  color: #434343;
+}
+.social-icons{
+  padding: 10px 0;
+  text-align: center;
+}
+.social-icons-desktop{
+display: flex;
+}
+
+.fa{
+  height: 20px;
+}

@@ -1,0 +1,48 @@
+.equity-panel{
+  width: 100%;
+  background-color: #EEEEEE;
+  padding: 60px 0;
+}
+.equity-container{
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.equity-textcomponent{
+  margin-top: 20px;
+  padding: 15px;
+}
+.equity-textcomponent h3{
+  font-family: 'poppins';
+  font-size: 26px;
+  font-weight: 100;
+  color: #434343;
+  margin: 5px 0;
+  line-height: 36px;
+}
+.equity-textcomponent h4{
+  font-family: 'poppins-light';
+  font-size: 20px;
+  color: #434343;
+  padding: 0;
+  margin: 5px 0;
+  line-height: normal;
+}
+.equity-button{
+    background: #ffffff;
+    font-family: 'poppins-bold';
+    font-size: 20px;
+    color: #145A32;
+    font-weight: normal;
+    border: 1px solid #145A32;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 22px;
+}
+.equity-button:hover{
+  background-color: #004D40;
+  color: #fff;
+}
