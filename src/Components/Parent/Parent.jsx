@@ -8,11 +8,11 @@ const Parent = () => {
       <div className='parent-container'>
         <div className="parent-row  parent-component">
           <div className="parent-column ">
-            <h2>PARENTS AND FAMILY WEEKEND</h2>
+            <h2>Parents And Family Weekend</h2>
             <h3>October 19 - October 22, 2024</h3>
-            <h2>&nbsp;</h2>
-            <p>The annual Parents and Family Weekend returns this fall, and provides families with an apportunity to visit their students, create life-long memories and participate in a wide variety of activities on campus.</p>
-            <h4>&nbsp;</h4>
+            <br />
+            <h4>Delvin State University is excited to welcome families back to campus this fall for our annual Parents and Family Weekend! This cherished tradition offers a special opportunity for families to reconnect with their students, engage in memorable experiences, and enjoy a diverse range of activities that showcase the vibrant DSU community. </h4>
+            <br />
             <h4>
               <button  className='parent-button' type='button'>
                 GET REGISTRATION AND TICKETING INFO &gt;

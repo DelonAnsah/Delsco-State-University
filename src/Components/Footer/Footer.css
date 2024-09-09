@@ -22,7 +22,7 @@
   transform: translateX(-50%);
 }
 .footer-logo img{
-  border-radius: 20%;
+  border-radius: 100%;
 }
 .carousel{
   display: flex;
@@ -40,6 +40,8 @@
   background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
   padding: 10px 0;
+  font-family: "montserrat";
+  font-weight: 300;
 }
 .carousel-content p{
   font-size: 14px;
@@ -47,15 +49,14 @@
   vertical-align: middle;
   padding-left: 10px;
 }
-.dsu-home{
-  font-family: 'poppins-light';
-}
 .fa-home{
   font-size: 24px;
   color: #2ECC71;
 }
 .dsu-home{
   color: #434343;
+  font-family: "montserrat";
+  font-weight: 300;
 }
 .footer-panel hr{
   width: 100%;
@@ -76,21 +77,24 @@
 .linksheader h3{
   color: #222;
   font-size: 24px;
-  font-family: 'poppins-light'
+  font-family: "montserrat";
+  font-weight: normal;
+  text-transform: uppercase;
 }
 .linksheader ul{
   list-style: none;
   font-size: 14px;
-  font-family: 'poppins-light';
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
 }
 .linksheader ul li{
-  color: #00CC66;
+  color: #00AA66;
   font-size: 14px;
   margin: 7.5px 0px ;
 }
 .fa-map-marker{
   margin-left: 5px;
-  color: #00CC66;
+  color: #00AA66;
 }
 #li{
   color: #434343;
@@ -104,8 +108,6 @@ display: flex;
 padding-left: 0;
 font-size: 14px;
 }
-
-.fa,
 .fa-brands {
   font-size: 25px;
   height: 20px;
@@ -114,9 +116,11 @@ font-size: 14px;
 .footer-fulllinks{
   margin: 7px auto;
   background-color: #EEE;
+  font-family: "montserrat", sans-serif;
 }
 .footer-container-fluid{
-  font-family: Arial;
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
   font-size: 10px;
   text-align: center;
   margin: 0;

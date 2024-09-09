@@ -1,7 +1,7 @@
 .openHouse-panel{
   width: 100%;
   background-color: #004D40;
-  padding: 100px 0 0 0;
+  padding: 100px 0;
   /*
   background: url(../../assets/abstract.png);
   background-repeat: no-repeat;
@@ -16,35 +16,47 @@
   text-align: center;
   color: #ddd;
 }
-.text-component{
+.text-component1{
   margin-top: 20px;
   padding: 18px;
 }
 .first-heading{
   color: rgb(255, 210, 0);
-  font-size: 28px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
-.second-heading{
-  margin-top: 70px;
-  color: #ddd;
-}
-.third-heading{
-  padding: 5px;
-  color: #ddd;
+.text-component1 h4{
+  text-align: center;
+  font-weight:350;
+  color: #434343;
+  font-size: 20px;
+  margin: 5px 0;
+  line-height: normal;
+
 }
 .row{
   display: flex;
+  justify-content: space-between;
 }
 .column{
-flex-basis: 33.3%;
- padding: 15px;
+  flex: 60%;
+  margin-right: 5px;
+  padding: 15px;
+}
+.column3{
+  flex: 50%;
+  margin-left: 10px;
 }
 .column img{
-  border-radius: 100%;
-  border: 8px solid #ddd;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  display: block;
 }
 .fouth-heading{
-  margin: 20px 0 0;
+  text-align: left;
+  font-weight: 400;
+  color: white;
+  margin: 20px 0;
   padding: 15px;
 }
 .font-change{
@@ -52,12 +64,13 @@ flex-basis: 33.3%;
 }
 .link{
   color: #004D40;
+  font-size: 15px;
 }
 .button-links{
   width: 100%;
   display: block;
  background-color: #FFD700;
- padding: 20px;
+ padding: 10px;
  margin-top: 20px;
 margin-bottom: 20px;
 }

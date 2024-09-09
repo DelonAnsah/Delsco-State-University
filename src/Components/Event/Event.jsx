@@ -94,7 +94,7 @@ const Event = () => {
             </div>
           </div>
           <div className="event-rightcolumn">
-            <img src={eventimage} alt="" width='100%' />
+            <img src={eventimage} alt="Calender-icon" width='100%' />
           </div>
         </div>
       </div>

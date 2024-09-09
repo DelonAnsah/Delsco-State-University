@@ -71,6 +71,8 @@
   background-color: rgba(199, 233, 192, 0.4);
 } 
 .event-details span{
+  font-family: "montserrat";
+  font-weight: 400;
   margin: 0 0 8px;
   color: #434343;
 }
@@ -89,7 +91,8 @@
   margin-top: 20px;
 }
 .events-calendar h3{
-  font-family: 'poppins-bold';
+  font-family: "montserrat";
+  font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import footerlogo from '../../assets/FooterLogo.png'
+import footerlogo from '../../assets/FooterLogo2.png'
 import footerimage_2 from '../../assets/footerimage4.jpeg'
 import footerimage_3 from '../../assets/footerimage3.jpg'
 import footerimage_4 from '../../assets/footerimage6.jpg'
@@ -19,19 +19,19 @@ const Footer = () => {
           <div className="carousel">
             <div className="carousel-item">
               <a href="#">
-              <img src={footerimage_2} alt="" width='100%'/>
+              <img src={footerimage_2} alt="Taking Pictures on Campus" width='100%'/>
               <div className='carousel-content'><p>Explore DSU in photos</p></div>
               </a>
             </div>
             <div className="carousel-item">
             <a href="#">
-            <img src={footerimage_3} alt="" width='100%'/>
+            <img src={footerimage_3} alt="Browsing the internet" width='100%'/>
             <div className='carousel-content'><p>Undergraduate Major Finder</p></div>
             </a>
             </div>
             <div className="carousel-item">
             <a href="#">
-            <img src={footerimage_4} alt="" width='100%' />
+            <img src={footerimage_4} alt="test lab" width='100%' />
             <div className='carousel-content'><p>Graduate Program Finder</p></div>
             </a>
             </div>
@@ -96,7 +96,7 @@ const Footer = () => {
                         <li><a href="#" class="fa-brands fa-instagram"></a></li>
                         <li><a href="#" class="fa-brands fa-square-facebook"></a></li>
                         <li><a href="#" class="fa-brands fa-linkedin"></a></li>
-                        <li><a href="#" class="fa fa-youtube"></a></li>
+                        <li><a href="#" class="fa-brands fa-youtube"></a></li>
                         <li><a href="#" ><i class="fa-brands fa-x-twitter"></i></a></li>
                       </div>
                     </li>
