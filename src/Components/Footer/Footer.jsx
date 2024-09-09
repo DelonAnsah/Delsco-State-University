@@ -93,23 +93,11 @@ const Footer = () => {
                     <li id='li' >P: +233-24967-8172</li>
                     <li className='social-icons'>
                       <div className="social-icons-desktop">
-                        <ul>
-                          <li>
-                          <a href="#"><img src={} alt="" /></a>
-                          </li>
-                          <li>
-                          <a href="#"><img src={} alt="" /></a>
-                          </li>
-                          <li>
-                          <a href="#"><img src={} alt="" /></a>
-                          </li>
-                          <li>
-                          <a href="#"><img src={} alt="" /></a>
-                          </li>
-                          <li>
-                          <a href="#"><img src={} alt="" /></a>
-                          </li>
-                        </ul>
+                        <li><a href="#" class="fa-brands fa-instagram"></a></li>
+                        <li><a href="#" class="fa-brands fa-square-facebook"></a></li>
+                        <li><a href="#" class="fa-brands fa-linkedin"></a></li>
+                        <li><a href="#" class="fa fa-youtube"></a></li>
+                        <li><a href="#" ><i class="fa-brands fa-x-twitter"></i></a></li>
                       </div>
                     </li>
                   </ul>
@@ -118,7 +106,8 @@ const Footer = () => {
             </div>
           </div>
           <hr />
-          <div className='footer-fulllinks'>
+      </div>
+      <div className='footer-fulllinks'>
             <div className="footer-container-fluid">
               <div className="footer-linkItem">&copy;2024 Delsco State University</div>
               <div className="footer-linkItem">
@@ -132,7 +121,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-      </div>
     </div>
   )
 }

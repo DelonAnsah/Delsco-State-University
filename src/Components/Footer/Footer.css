@@ -88,6 +88,10 @@
   font-size: 14px;
   margin: 7.5px 0px ;
 }
+.fa-map-marker{
+  margin-left: 5px;
+  color: #00CC66;
+}
 #li{
   color: #434343;
 }
@@ -97,8 +101,32 @@
 }
 .social-icons-desktop{
 display: flex;
+padding-left: 0;
+font-size: 14px;
 }
 
-.fa{
+.fa,
+.fa-brands {
+  font-size: 25px;
   height: 20px;
+  margin-right: 20px;
+}
+.footer-fulllinks{
+  margin: 7px auto;
+  background-color: #EEE;
+}
+.footer-container-fluid{
+  font-family: Arial;
+  font-size: 10px;
+  text-align: center;
+  margin: 0;
+}
+.footer-linkItem{
+  padding: 8px 10px 0 0;
+  display: inline-block;
+  color: #000;
+}
+.footer-linkItem a{
+  text-decoration: underline;
+  color: #2ECC71;
 }
