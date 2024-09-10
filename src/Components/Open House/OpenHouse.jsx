@@ -10,15 +10,15 @@ const OpenHouse = () => {
       <div className='container'>
         <div className='text-component1' >
           <h2 style={{textAlign: 'center'}}> 
-            <span className='first-heading'>Join Us For Green And Golden Open HouseE</span>
+            <span className='first-heading'>Join Us For Green And Golden Open House</span>
           </h2>
-          <h4>
+          <h4 style={{padding: '0px'}}>
            <span>&nbsp;</span> 
           </h4 >
           <h4>
             <span style={{color: 'rgba(255, 255, 255)'}}>Visit our campus and picture yourself as a proud Green Tiger</span>
           </h4>
-          <h4>
+          <h4 style={{padding: '0px'}}>
            <span>&nbsp;</span> 
           </h4 >
           <h4>

@@ -18,21 +18,21 @@ const Header = () => {
         <div className="Right-items">
         <div className='header-icons'>
         <ul>
-          <li><a href="#"><img src={visit_icon} alt="" /></a></li>
-          <li><a href="#"><img src={apply_icon} alt="" /></a></li>
-          <li><a href="#"><img src={give_icon} alt="" /></a></li>
-          <li><a href="#"><img src={search_icon}alt="" /></a></li>
+          <li><a href="#"><img src={visit_icon} alt="visit icon" /></a></li>
+          <li><a href="#"><img src={apply_icon} alt="apply icon" /></a></li>
+          <li><a href="#"><img src={give_icon} alt="give icon" /></a></li>
+          <li><a href="#"><img src={search_icon}alt="search icon" /></a></li>
         </ul>
       </div>
       <div className='dropdown-menu'>
         <button className='dropbtn'>Quick Links  <span><img className='arrow-down' src={collapse_down}alt="" /></span></button>
         <div className='dropdown-content'>
           <ul>
-            <li><a href="">MyDSU</a></li>
-            <li><a href="">Maps</a></li>
-            <li><a href="">People Directory</a></li>
-            <li><a href="">Email</a></li>
-            <li><a href="">Careers</a></li>
+            <li><a href="#">MyDSU</a></li>
+            <li><a href="#">Maps</a></li>
+            <li><a href="#">People Directory</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Careers</a></li>
           </ul>
         </div>
         </div>
