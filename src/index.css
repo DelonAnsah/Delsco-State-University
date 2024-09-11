@@ -6,9 +6,20 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-
+.main-container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  -webkit-transition: left .4s ease-in-out;
+  transition: left .4s ease-in-out;
+}
 body{
   background: #fff;
+}
+.main-header{
+  position: relative;
+  z-index: 3;
 }
 a{
   text-decoration: none;
