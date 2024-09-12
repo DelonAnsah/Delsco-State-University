@@ -52,6 +52,11 @@ const Header = () => {
             <li><a href="#" title='people Directory' target='_self' >People Directory</a></li>
             <li><a href="#" title='Email' target='_self' >Email</a></li>
             <li><a href="#" title='Careers' target='_self' >Careers</a></li>
+            <li><a href="#" title='Library' target='_self' >Library</a></li>
+            <li><a href="#" title='A-Z Index' target='_self' >A-Z Index</a></li>
+            <li><a href="#" title='News' target='_self' >News</a></li>
+            <li><a href="#" title='Events' target='_self' >Events</a></li>
+            <li><a href="#" title='Safety at DSU' target='_self' >Safety at DSU</a></li>
             </ul>
           </div>
         </div>

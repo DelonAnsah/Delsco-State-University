@@ -9,12 +9,14 @@ import Event from './Components/Event/Event'
 import Equity from './Components/Equity/Equity'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
+import Navbar from './Components/Navbar/Navbar'
 
 const App = () => {
   return (
     <div className='main-container'>
       <div className='main-header'>
       <Header/>
+      <Navbar/>
       </div>
       <Hero/>
       <OpenHouse/>

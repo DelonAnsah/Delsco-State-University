@@ -96,6 +96,7 @@
   display: inline-block;
   cursor: pointer;
   width: auto;
+  z-index: 1000;
 }
 .dropdown .dropdown-toggle.quick-links span{
   padding-left: 15px;
@@ -160,15 +161,8 @@
   white-space: nowrap;
   color: #333;
 }
-.dropdown .dropdown-toggle.quick-links span i{
-  transition: transform 0.3s ease;
-}
-.dropdown:hover .fa-circle-chevron-down,
-.dropdown .fa-circle-chevron-down{
-  transform: rotate(180deg);
-}
-.dropdown .fa-circle-chevron-down{
-  transform: rotate(0deg);
+.dropdown-menu>li a:hover{
+  background-color: #EEE;
 }
 .dropdown:hover .dropdown-menu,
 .dropdown .dropdown-toggle.quick-links:hover + .dropdown-menu{
