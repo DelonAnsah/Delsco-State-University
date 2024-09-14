@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -7,83 +7,84 @@ const Navbar = () => {
   return (
     <nav className='navbar'> 
       <div className="navbar-container">
-      <ul className="navbar-list">
-      <li><a href="#">About DSU</a>
-        <ul className="nav-dropdown">
-          <li><a href="#">Leadership</a></li>
-          <li><a href="#">Mission</a></li>
-          <li><a href="#">Experience DSU</a></li>
-          <li><a href="#">DSU and the State of Delsco</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Facts & Figures</a></li>
-          <li><a href="#">DSU Community</a></li>
-          <li><a href="#">Values</a></li>
+        <div className="sidebar"></div>
+        <ul className="navbar-list">
+          <li><a href="#">About DSU</a>
+            <ul className="nav-dropdown">
+              <li><a target='_self' href="#">Leadership</a></li>
+              <li><a target='_self' href="#">Mission</a></li>
+              <li><a target='_self' href="#">Experience DSU</a></li>
+              <li><a target='_self' href="#">DSU and the State of Delsco</a></li>
+              <li><a target='_self' href="#">History</a></li>
+              <li><a target='_self' href="#">Facts & Figures</a></li>
+              <li><a target='_self' href="#">DSU Community</a></li>
+              <li><a target='_self' href="#">Values</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Prospective Students</a>
+            <ul className="nav-dropdown">
+              <li><a target='_self' href="#">Undergraduate Admissions</a></li>
+              <li><a target='_self' href="#">Success After DSU</a></li>
+              <li><a target='_self' href="#">Graduate Admissions</a></li>
+              <li><a target='_self' href="#">Professional & Continuing Studies</a></li>
+              <li><a target='_self' href="#">Online Programs</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Current Students</a>
+            <ul className="nav-dropdown">
+              <li><a target='_self' href="#">Academic Calendar</a></li>
+              <li><a target='_self' href="#">Housing</a></li>
+              <li><a target='_self' href="#">Finances & Aid</a></li>
+              <li><a target='_self' href="#">Advising</a></li>
+              <li><a target='_self' href="#">Safety</a></li>
+              <li><a target='_self' href="#">Student Diversity & Inclusion</a></li>
+              <li><a target='_self' href="#">Student Wellbeing</a></li>
+              <li><a target='_self' href="#">Student Support</a></li>
+              <li><a target='_self' href="#">Green Lantern Traditions</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Faculty & Staff</a>
+            <ul className="nav-dropdown">
+              <li><a target='_self' href="#">Human Resources</a></li>
+              <li><a target='_self' href="#">Experts</a></li>
+              <li><a target='_self' href="#">Employee Resources</a></li>
+              <li><a target='_self' href="#">Faculty Affairs</a></li>
+              <li><a target='_self' href="#">Media Experts</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Alumni & Friends</a>
+            <ul className="nav-dropdown">
+              <li><a target='_self' href="#">Connect</a></li>
+              <li><a target='_self' href="#">Give</a></li>
+              <li><a target='_self' href="#">Resources</a></li>
+              <li><a target='_self' href="#">About</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Academics</a>
+            <ul className="nav-dropdown">
+              <li><a target='_self' href="#">Colleges</a></li>
+              <li><a target='_self' href="#">Library</a></li>
+              <li><a target='_self' href="#">Programs</a></li>
+              <li><a target='_self' href="#">DSU Global</a></li>
+              <li><a target='_self' href="#">Registrar</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Research & Innovation</a>
+            <ul className="nav-dropdown">
+              <li><a target='_self' href="#">Research At DSU</a></li>
+              <li><a target='_self' href="#">Horn Entrepreneurship</a></li>
+              <li><a target='_self' href="#">STAR Campus</a></li>
+              <li><a target='_self' href="#">Innovation Gateway</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Athletics</a>
+            <ul className="nav-dropdown">
+              <li><a target='_self' href="">GreenLanten.com</a></li>
+            </ul>
+          </li>
         </ul>
-      </li>
-      <li><a href="#">Prospective Students</a>
-        <ul className="nav-dropdown">
-          <li><a href="#">Undergraduate Admissions</a></li>
-          <li><a href="#">Success After DSU</a></li>
-          <li><a href="#">Graduate Admissions</a></li>
-          <li><a href="#">Professional & Continuing Studies</a></li>
-          <li><a href="#">Online Programs</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Current Students</a>
-        <ul className="nav-dropdown">
-          <li><a href="#">Academic Calendar</a></li>
-          <li><a href="#">Housing</a></li>
-          <li><a href="#">Finances & Aid</a></li>
-          <li><a href="#">Advising</a></li>
-          <li><a href="#">Safety</a></li>
-          <li><a href="#">Student Diversity & Inclusion</a></li>
-          <li><a href="#">Student Wellbeing</a></li>
-          <li><a href="#">Student Support</a></li>
-          <li><a href="#">Green Lantern Traditions</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Faculty & Staff</a>
-        <ul className="nav-dropdown">
-          <li><a href="#">Human Resources</a></li>
-          <li><a href="#">Experts</a></li>
-          <li><a href="#">Employee Resources</a></li>
-          <li><a href="#">Faculty Affairs</a></li>
-          <li><a href="#">Media Experts</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Alumni & Friends</a>
-        <ul className="nav-dropdown">
-          <li><a href="#">Connect</a></li>
-          <li><a href="#">Give</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Academics</a>
-        <ul className="nav-dropdown">
-          <li><a href="#">Colleges</a></li>
-          <li><a href="#">Library</a></li>
-          <li><a href="#">Programs</a></li>
-          <li><a href="#">DSU Global</a></li>
-          <li><a href="#">Registrar</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Research & Innovation</a>
-        <ul className="nav-dropdown">
-          <li><a href="#">Research At DSU</a></li>
-          <li><a href="#">Horn Entrepreneurship</a></li>
-          <li><a href="#">STAR Campus</a></li>
-          <li><a href="#">Innovation Gateway</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Athletics</a>
-        <ul className="nav-dropdown">
-          <li><a href="">GreenLanten.com</a></li>
-        </ul>
-      </li>
-    </ul>
       </div>
-  </nav>
+    </nav>
   );
 };
 

@@ -30,22 +30,22 @@ h4{
 }
 .slideshow-container{
   margin: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
   position: relative;
 
 }
 .slider{
   display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
+  gap: 20px;
 }
 .mySlides{
   flex: 0 0 33.33%;
-  justify-content: center;
   max-width: 314px;
-  margin-right: 25px;
+  justify-content: space-between;
   height: 200px;
   text-align: center;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;

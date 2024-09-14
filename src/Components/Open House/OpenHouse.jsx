@@ -1,7 +1,7 @@
 import React from 'react'
 import './OpenHouse.css'
 import openhouse1 from '../../assets/footerimage2.jpg'
-import openhouse2 from '../../assets/Gallery_1.jpg'
+import openhouse2 from '../../assets/Gallery_9.jpg'
 
 const OpenHouse = () => {
   return (
@@ -16,7 +16,7 @@ const OpenHouse = () => {
            <span>&nbsp;</span> 
           </h4 >
           <h4>
-            <span style={{color: 'rgba(255, 255, 255)'}}>Visit our campus and picture yourself as a proud Green Tiger</span>
+            <span style={{color: 'rgba(255, 255, 255)'}}>Visit our campus and picture yourself as a proud Green Laten</span>
           </h4>
           <h4 style={{padding: '0px'}}>
            <span>&nbsp;</span> 

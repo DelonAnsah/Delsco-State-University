@@ -178,3 +178,47 @@
   display: block;
   opacity: 1;
 }
+.nav-toggle{
+  display: none;
+  position: absolute;
+  top: 45%;
+  right: 2%;
+  transform: translateY(-50%);
+  z-index: 4;
+  background: none;
+  border: none;
+  font-size: 31px;
+  color: #FFF;
+  cursor: pointer;
+}
+.nav-toggle:focus {
+  outline: none;
+}
+@media (min-width: 320px) and (max-width: 375px){
+ .nav-toggle{
+  display: block;
+ }
+ .header-icons,
+ .dropdown,
+ .icon-list{
+  display: none;
+ }
+ .header-panel{
+  height: 60px;
+ }
+ .header-container{
+  max-width: none;
+}
+.img-responsive{
+  justify-content: center;
+}
+ .header-container img{
+  height: 40px;
+  width: 120px;
+  margin: 0px 10px 10px 0px;
+}
+
+
+
+
+}

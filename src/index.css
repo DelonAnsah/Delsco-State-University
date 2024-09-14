@@ -31,3 +31,7 @@ a{
   line-height: 1;
   cursor: pointer;
 }
+html {
+  scroll-behavior: smooth;
+}
+

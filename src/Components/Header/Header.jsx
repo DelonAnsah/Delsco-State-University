@@ -1,24 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import headerlogo from '../../assets/Headerlogo.png'
 import visit_icon from '../../assets/icon-header-visit.png'
 import apply_icon from '../../assets/icon-header-apply.png'
 import give_icon from '../../assets/icon-header-give.png'
 import search_icon from '../../assets/icon-header-search.png'
-import glyhicon_dropdown from '../../assets/Collapse-down.png'
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  }
+
+
   return (
-    <div className='header-panel'>
+    <div id='home' className='header-panel'>
       <div className="header-container">
         <div className="dsulogo">
           <div className="img-responsive">
             <a target='self' href="#">
-              <img className='headerlogo' src={headerlogo} alt="Delsco State University" title='Delsco State University'/>
+              <img className='headerlogo' src={headerlogo} alt="Delsco State University" title='Delsco State University'/>             
             </a>
+            <button className='nav-toggle' onClick={toggleSidebar}>
+          <i class="fa-solid fa-bars fa-beat"></i>
+          </button>
           </div>
         </div>
-        <div className="header-icons">
+        <div className={`header-icons ${isOpen ? 'open' : ''}`}>
           <ul className='icon-list'>
             <li className='header-icon' title='search'>
               <a target='self' href="#">

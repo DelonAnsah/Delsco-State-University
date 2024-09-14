@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="dsu-home">
-            <a href="#">
+            <a href="#home">
             <i class="fa fa-home"></i>
             &nbsp;
             <span>DSU Home</span>

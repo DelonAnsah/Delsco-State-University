@@ -27,7 +27,7 @@ const Hero = () => {
       
       <div className='hero-text'>
         <h1>YOUR FUTURE STARTS NOW. </h1>
-        <h1>BECOME A TIGER.</h1>
+        <h1>BECOME A GREEN LANTEN.</h1>
       </div>
     </div>
   )

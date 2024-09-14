@@ -1,55 +1,73 @@
 .navbar{
   background-color: rgba(0, 0, 0, .7);
   width: 100%;
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 .navbar-container{
   width: 95%;
   margin: 0 auto;
   max-width: 1170px;
- 
 }
 .navbar-list{
   display: flex;
   padding: 8px;
   justify-content: center;
   text-align: left;
+  line-height: 14px;
+  margin: 7.5px - 15px;
 }
-.navbar-list > li{
+.navbar-list > li {
   position: relative;
   color: #FFF;
   font-size: 18px;
   text-transform: uppercase;
-  padding-left: 8px;
-  padding-right: 5px;
+  padding: 8px;
   font-weight: 600;
   cursor: pointer;
-  width: 100%;
+  width: 151px;
+  box-shadow: 1px 0 0 0 #EEE;
+}
+.navbar-list > li:last-child {
+ box-shadow: none; 
 }
 .nav-dropdown{
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  padding: 8px;
+  padding-top: 12px;
   background-color: #EEE;
   text-align: left;
+  padding: 5px o;
+  margin: 2px 0 0;
   width: 100%;
-  border: 1px solid #FFF;
-  height: 380px;
+  background-clip: padding-box;
+  height: 360px;
+  border: 1px solid ;
 }
 .nav-dropdown li a{
-  padding-top: 12px;
+  display: block;
+  padding: 5px 20px;
   text-transform: capitalize;
   font-weight: 500;
   font-size: 13px;
+  white-space: normal;
   color: #004D40;
   cursor: pointer;
-  line-height: 25px;
+  line-height: normal;
+  margin-right: 5px;
+
 }
 .navbar-list:hover .nav-dropdown{
   display: block;
-
 }
-
+.navbar-list li:hover .nav-dropdown{
+  background-color: #FFF;
+  color: #004D40;
+  border: none;
+}
+.navbar-list > li:hover {
+  background-color: #FFF; 
+  color: #004D40;
+}
