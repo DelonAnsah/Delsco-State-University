@@ -1,5 +1,9 @@
 import React from 'react';
 import './Navbar.css';
+import visit_icon from '../../assets/icon-header-visit.png'
+import apply_icon from '../../assets/icon-header-apply.png'
+import give_icon from '../../assets/icon-header-give.png'
+import search_icon from '../../assets/icon-header-search.png'
 
 const Navbar = () => {
   
@@ -7,7 +11,36 @@ const Navbar = () => {
   return (
     <nav className='navbar'> 
       <div className="navbar-container">
-        <div className="sidebar"></div>
+      <div id='sidebar' style={{display: 'none'}}>
+          <div id='header-icons'>
+            <ul id='icon-list'>
+              <li id='header-icon'>
+                  <a target='self' href="#" title='visit'>
+                    <img title='visit' src={visit_icon} alt="visit" />
+                  </a>
+              </li>
+              <li id='header-icon'>
+                  <a target='self' href="#" title='Apply'>
+                    <img title='apply' src={apply_icon} alt="apply" />
+                  </a>
+              </li>
+              <li id='header-icon' title='Give'>
+                  <a target='self' href="#">
+                    <img title='give' src={give_icon} alt="give" />
+                  </a>
+              </li>
+              <li id='header-icon' title='search'>
+                  <a target='self' href="#">
+                   <img title='search' src={search_icon} alt="search" />
+                  </a>
+              </li>
+            </ul>
+          </div>
+          <button>
+            Quick Links
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+        </div>
         <ul className="navbar-list">
           <li><a href="#">About DSU</a>
             <ul className="nav-dropdown">

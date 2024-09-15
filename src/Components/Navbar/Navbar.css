@@ -71,3 +71,83 @@
   background-color: #FFF; 
   color: #004D40;
 }
+#sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: blue;
+  width: 290px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 2;
+}
+#icon-list li{
+  margin: 5px 0;
+}
+#icon-list li img{
+  width: 35px;
+  height: 35px;
+}
+#sidebar button {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  text-align: left;
+  background-color: #003731;
+  color: #FFF;
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#sidebar button span {
+  position: absolute;
+  top: 6px;
+  bottom: 3px;
+  right: 0;
+  border-left: 2px solid #1F7A55;
+  padding: 5px 12px;
+}
+.fa-chevron-down{
+  display: inline-block;
+  line-height: 1;
+  font-size: 14px;
+}
+#header-icons{
+  position: relative;
+  padding-top: 3px;
+  width: 290px;
+  background-color: #666;
+}
+#icon-list{
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+#header-icon{
+  float: left;
+  height: 35px;
+  width: 48px;
+}
+#header-icon a{
+  min-width: 30px;
+  min-height: 40px;
+  display: inline-block;
+}
+#header-icon a img,
+#header-icon img{
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .navbar-list{
+    display: none;
+  }
+  
+}

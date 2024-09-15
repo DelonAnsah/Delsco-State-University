@@ -23,11 +23,11 @@ const Header = () => {
               <img className='headerlogo' src={headerlogo} alt="Delsco State University" title='Delsco State University'/>             
             </a>
             <button className='nav-toggle' onClick={toggleSidebar}>
-          <i class="fa-solid fa-bars fa-beat"></i>
+              <i class="fa-solid fa-bars fa-beat"></i>
           </button>
           </div>
         </div>
-        <div className={`header-icons ${isOpen ? 'open' : ''}`}>
+        <div className="header-icons">
           <ul className='icon-list'>
             <li className='header-icon' title='search'>
               <a target='self' href="#">
