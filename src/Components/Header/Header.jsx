@@ -5,6 +5,8 @@ import visit_icon from '../../assets/icon-header-visit.png'
 import apply_icon from '../../assets/icon-header-apply.png'
 import give_icon from '../../assets/icon-header-give.png'
 import search_icon from '../../assets/icon-header-search.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +25,7 @@ const Header = () => {
               <img className='headerlogo' src={headerlogo} alt="Delsco State University" title='Delsco State University'/>             
             </a>
             <button className='nav-toggle' onClick={toggleSidebar}>
-              <i class="fa-solid fa-bars fa-beat"></i>
+            <FontAwesomeIcon icon={faBars} />
           </button>
           </div>
         </div>
