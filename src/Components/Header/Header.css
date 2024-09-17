@@ -3,6 +3,7 @@
   width: 100%;
   background-color: #004D40;
   border-bottom: 2px solid #FFD300;
+  
 }
 .header-container{
   position: relative;
@@ -66,6 +67,10 @@
   height: 25px;
   object-fit: contain;
   cursor: pointer;
+}
+.header-icon a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 #quickLinksDropdown,
 .dropdown,
@@ -178,26 +183,7 @@
   display: block;
   opacity: 1;
 }
-.nav-toggle{
-  display: none;
-  position: absolute;
-  top: 45%;
-  right: 2%;
-  transform: translateY(-50%);
-  z-index: 4;
-  background: none;
-  border: none;
-  font-size: 31px;
-  color: #FFF;
-  cursor: pointer;
-}
-.nav-toggle:focus {
-  outline: none;
-}
 @media (min-width: 320px) and (max-width: 375px){
- .nav-toggle{
-  display: block;
- }
  .header-icons,
  .dropdown,
  .icon-list{

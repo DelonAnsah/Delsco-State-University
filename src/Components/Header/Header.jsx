@@ -9,12 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  }
-
 
   return (
     <div id='home' className='header-panel'>
@@ -24,9 +18,7 @@ const Header = () => {
             <a target='self' href="#">
               <img className='headerlogo' src={headerlogo} alt="Delsco State University" title='Delsco State University'/>             
             </a>
-            <button className='nav-toggle' onClick={toggleSidebar}>
-            <FontAwesomeIcon icon={faBars} />
-          </button>
+  
           </div>
         </div>
         <div className="header-icons">

@@ -71,6 +71,23 @@
   background-color: #FFF; 
   color: #004D40;
 }
+.nav-toggle{
+  display: none;
+  position: absolute;
+  top: -31px;
+  right: 2%;
+  transform: translateY(-50%);
+  z-index: 4;
+  background: none;
+  border: none;
+  font-size: 31px;
+  color: #FFF;
+  cursor: pointer;
+}
+.nav-toggle:focus {
+  outline: none;
+}
+
 #sidebar{
   position: fixed;
   left: 0;
@@ -80,13 +97,32 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  left: -290px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+.sidebar-overlay.open {
+  display: block;
+}
+.sidebar.open {
+  left: 0;
 }
 #icon-list li img{
   width: 35px;
   height: 35px;
 }
-#sidebar button {
-  width: 100%;
+#QuickLink-button {
+  width: 290px;
   padding: 12px 15px;
   border: none;
   text-align: left;
@@ -97,8 +133,7 @@
   font-weight: 300;
   font-size: 18px;
 }
-
-#sidebar button span {
+#QuickLink-button span {
   position: absolute;
   top: 50%;
   right: 0;
@@ -136,6 +171,7 @@
 }
 #quicklink-mobile{
   background-color: #E0E0E0;
+  width: 290px;
 }
 #quicklink-mobile ul{
   padding: 7px 20px;
@@ -185,13 +221,13 @@ button span{
   text-align: center;
   margin-bottom: 5px;
  }
-#navbar-list > li>span{
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  padding: 5px 5px;
-}
+ #navbaralign{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+ }
 #nav-dropdown{
   display: none;
   padding: 5px 0;
@@ -210,17 +246,22 @@ button span{
   text-transform: capitalize;
   white-space: normal;
 }
+#nav-dropdown.show{
+  display: block;
+}
 @media (min-width: 320px) and (max-width: 375px) {
+  .nav-toggle{
+    display: block;
+   }
   #sidebar .navbar-list{
     display: flex;
     flex-direction: column;
   }
-  .nav-dropdown{
+  .navbar-list{
     display: none;
   }
   #sidebar{
     display: block;
     width: 100%;
   }
-  
 }
