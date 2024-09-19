@@ -17,6 +17,46 @@
   line-height: 14px;
   margin: 7.5px - 15px;
 }
+.sidebar{
+  position: fixed;
+  left: -290px;
+  top: 0;
+  width: 290px;
+  height: 100%;
+  background-color: #EEE;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+.sidebar.open {
+  left: 0;
+}
+.sidebar-overlay.open {
+  display: block;
+}
+#QuickLink-button {
+  width: 290px;
+  padding: 12px 15px;
+  border: none;
+  text-align: left;
+  background-color: #003731;
+  color: #FFF;
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 18px;
+}
+.collapse.show{
+  display: block;
+}
+.quicklink-mobile ul{
+  padding: 7px 20px;
+  font-weight: 350;
+}
+.quicklink-mobile ul li{
+  color: #004D40;
+  padding: 7px 0;
+  font-size: 16px;
+}
 .navbar-list > li {
   position: relative;
   color: #FFF;
@@ -87,20 +127,6 @@
 .nav-toggle:focus {
   outline: none;
 }
-
-#sidebar{
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: blue;
-  width: 290px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  left: -290px;
-  transition: left 0.3s ease-in-out;
-  z-index: 1000;
-}
 .sidebar-overlay {
   position: fixed;
   top: 0;
@@ -111,27 +137,9 @@
   display: none;
   z-index: 999;
 }
-.sidebar-overlay.open {
-  display: block;
-}
-.sidebar.open {
-  left: 0;
-}
 #icon-list li img{
   width: 35px;
   height: 35px;
-}
-#QuickLink-button {
-  width: 290px;
-  padding: 12px 15px;
-  border: none;
-  text-align: left;
-  background-color: #003731;
-  color: #FFF;
-  position: relative;
-  cursor: pointer;
-  font-weight: 300;
-  font-size: 18px;
 }
 #QuickLink-button span {
   position: absolute;
@@ -169,24 +177,12 @@
   object-fit: contain;
   cursor: pointer;
 }
-#quicklink-mobile{
+.quicklink-mobile{
   background-color: #E0E0E0;
   width: 290px;
 }
-#quicklink-mobile ul{
-  padding: 7px 20px;
-  font-weight: 350;
-}
-#quicklink-mobile ul li{
-  color: #004D40;
-  padding: 7px 0;
-  font-size: 16px;
-}
 .collapse{
   display: none;
-}
-.collapse.show{
-  display: block;
 }
 button span{
   transition: transform 0.3s ease;
@@ -229,7 +225,10 @@ button span{
   font-size: 16px;
  }
 #nav-dropdown{
-  display: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, height 0.3s ease;
   padding: 5px 0;
   margin: 2px 0;
   font-size: 14px;
@@ -247,21 +246,17 @@ button span{
   white-space: normal;
 }
 #nav-dropdown.show{
-  display: block;
+  opacity: 1;
+  height: auto;
 }
 @media (min-width: 320px) and (max-width: 375px) {
   .nav-toggle{
     display: block;
    }
-  #sidebar .navbar-list{
-    display: flex;
-    flex-direction: column;
-  }
   .navbar-list{
     display: none;
   }
-  #sidebar{
+  .sidebar{
     display: block;
-    width: 100%;
   }
 }

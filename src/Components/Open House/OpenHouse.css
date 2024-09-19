@@ -32,7 +32,6 @@
   font-size: 20px;
   margin: 5px 0;
   line-height: normal;
-
 }
 .row{
   display: flex;
@@ -73,4 +72,41 @@
  padding: 10px;
  margin-top: 20px;
 margin-bottom: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+  .openHouse-panel{
+    padding: 25px 0;
+  }
+  .container{
+    width: 100%;
+    max-width: 1140px;
+  }
+  .text-component1{
+    padding: 15px;
+  }
+  .first-heading{
+    color: rgb(255, 210, 0);
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+  .text-component1 h4{
+    text-align: center;
+    font-weight:350;
+    color: #434343;
+    font-size: 19px;
+    margin: 5px 0;
+    line-height: normal;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .column img{
+    border-radius: 0;
+    border: 5px solid #fff;
+    display: block;
+  }
+  
 }

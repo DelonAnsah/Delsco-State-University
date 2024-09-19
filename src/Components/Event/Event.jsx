@@ -1,6 +1,8 @@
 import React from 'react'
 import './Event.css'
 import eventimage from '../../assets/About.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Event = () => {
   return (
@@ -16,7 +18,7 @@ const Event = () => {
                     <li className='event-item'>
                       <div className='icon-col'>
                         <a href="#">
-                          <i class="fa fa-calendar"></i>
+                         <FontAwesomeIcon className='fa-calendar' icon={ faCalendarAlt }/>
                         </a>
                       </div>
                       <div className='event-details'>
@@ -30,7 +32,7 @@ const Event = () => {
                     <li className='event-item'>
                       <div className='icon-col icon'>
                         <a href="#">
-                          <i class="fa fa-calendar"></i>
+                          <FontAwesomeIcon className='fa-calendar' icon={ faCalendarAlt }/>
                         </a>
                       </div>
                       <div className='event-details more'>
@@ -44,7 +46,7 @@ const Event = () => {
                     <li className='event-item'>
                       <div className='icon-col'>
                         <a href="#">
-                          <i class="fa fa-calendar"></i>
+                          <FontAwesomeIcon className='fa-calendar' icon={ faCalendarAlt }/>
                         </a>
                       </div>
                       <div className='event-details'>
@@ -58,7 +60,7 @@ const Event = () => {
                     <li className='event-item'>
                       <div className='icon-col icon'>
                         <a  href="#">
-                          <i class="fa fa-calendar"></i>
+                          <FontAwesomeIcon className='fa-calendar' icon={ faCalendarAlt }/>
                         </a>
                       </div>
                       <div className='event-details more'>
@@ -72,7 +74,7 @@ const Event = () => {
                     <li className='event-item'>
                       <div className='icon-col'>
                         <a href="#">
-                          <i class="fa fa-calendar"></i>
+                         <FontAwesomeIcon className='fa-calendar' icon={ faCalendarAlt }/>
                         </a>
                       </div>
                       <div className='event-details '>
@@ -89,7 +91,7 @@ const Event = () => {
             </div>
             <div className='events-calendar'>
               <h3>
-                <a href="#"><i class="fa fa-calendar"></i> Events Calendar &gt; </a>
+                <a href="#"> <FontAwesomeIcon className='fa-calendar' icon={ faCalendarAlt }/> Events Calendar &gt; </a>
               </h3>
             </div>
           </div>

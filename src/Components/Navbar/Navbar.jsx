@@ -14,8 +14,17 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+  const toggleQuickLinks = () => {
+    setIsQuickLinksOpen(!isQuickLinksOpen);
+  };
+  const toggleDropdown = (index) => {
+    setOpenDropdown(openDropdown === index ? null : index)
   };
 
   const closeSidebar =(e) => {
@@ -24,97 +33,67 @@ const Navbar = () => {
     }
   };
 
-  const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
-
-  const toggleQuickLinks = () => {
-    setIsQuickLinksOpen(!isQuickLinksOpen);
-  };
-
-  const toggleDropdown = (index) => {
-    setOpenDropdown(openDropdown === index ? null : index)
-  };
-
+ 
   return (
     <nav className={`navbar ${isQuickLinksOpen ? 'open' : ''}`}> 
       <button className='nav-toggle' onClick={toggleSidebar}>
         <FontAwesomeIcon icon={faBars} />
        </button>
       <div className= "navbar-container">
-        <div 
-          className={`sidebar-overlay ${isSidebarOpen ? "open" : ""}`} 
-          onClick={closeSidebar}      
-         >
-          <div id={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-          <div id='header-icons'>
-            <ul id='icon-list'>
-              <li id='header-icon'>
-                  <a target='self' href="#" title='visit'>
-                    <img title='visit' src={visit_icon} alt="visit" />
-                  </a>
-              </li>
-              <li id='header-icon'>
-                  <a target='self' href="#" title='Apply'>
-                    <img title='apply' src={apply_icon} alt="apply" />
-                  </a>
-              </li>
-              <li id='header-icon' title='Give'>
-                  <a target='self' href="#">
-                    <img title='give' src={give_icon} alt="give" />
-                  </a>
-              </li>
-              <li id='header-icon' title='search'>
-                  <a target='self' href="#">
-                   <img title='search' src={search_icon} alt="search" />
-                  </a>
-              </li>
+        <div className={`sidebar-overlay ${isSidebarOpen ? "open" : ""}`} onClick={closeSidebar}      >
+          <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+            <div id='header-icons'>
+              <ul id='icon-list'>
+                <li id='header-icon'><a href="#"><img src={visit_icon} alt="visit"/></a></li>
+                <li id='header-icon'><a href="#"><img src={apply_icon} alt="apply"/></a></li>
+                <li id='header-icon'><a href="#"><img src={give_icon} alt="give"/></a></li>
+                <li id='header-icon'><a href="#"><img src={search_icon} alt="search"/></a></li>
+              </ul>
+            </div>
+            <button id='QuickLink-button' onClick={toggleQuickLinks}>
+              Quick Links
+              <span><FontAwesomeIcon icon={isQuickLinksOpen ? faChevronUp : faChevronDown} /></span>
+            </button>
+            <div className={`quicklink-mobile collapse ${isQuickLinksOpen ? 'show' : ''}`}>
+              <ul id='dropdown-menu'>
+                <li><a href="#" >MyDSU</a></li>
+                <li><a href="#" >Maps</a></li>
+                <li><a href="#" >People Directory</a></li>
+                <li><a href="#" >Email</a></li>
+                <li><a href="#" >Careers</a></li>
+                <li><a href="#" >Library</a></li>
+                <li><a href="#" >A-Z Index</a></li>
+                <li><a href="#" >News</a></li>
+                <li><a href="#" >Events</a></li>
+                <li><a href="#" >Safety at DSU</a></li>
+              </ul>
+            </div>
+            <ul id="navbar-list">
+              {[
+                { title: "About DSU", items: ["Leadership", "Mission", "Experience DSU", "DSU and the State of Delsco", "History", "Facts & Figures", "DSU Community", "Values"] },
+                { title: "Prospective Students", items: ["Undergraduate Admissions", "Success After DSU", "Graduate Admissions", "Professional & Continuing Studies", "Online Programs"] },
+                { title: "Current Students", items: ["Academic Calendar", "Housing", "Finances & Aid", "Advising", "Safety", "Student Diversity & Inclusion", "Student Wellbeing", "Student Support", "Green Lantern Traditions"] },
+                { title: "Faculty & Staff", items: ["Human Resources", "Experts", "Employee Resources", "Faculty Affairs", "Media Experts"] },
+                { title: "Alumni & Friends", items: ["Connect", "Give", "Resources", "About"] },
+                { title: "Academics", items: ["Colleges", "Library", "Programs", "DSU Global", "Registrar"] },
+                { title: "Research & Innovation", items: ["Research At DSU", "Horn Entrepreneurship", "STAR Campus", "Innovation Gateway"] },
+                { title: "Athletics", items: ["GreenLanten.com"] },
+               ].map((section, index) => (
+                <li key={index} onClick={() => toggleDropdown(index)}tabIndex={0} >
+                  <div id='navbaralign'>
+                    <a href="#">{section.title} </a>
+                    <span><FontAwesomeIcon icon={openDropdown === index ? faMinus : faPlus } size='lg' /></span>
+                  </div>
+                  
+                  <ul id='nav-dropdown' className={openDropdown === index ? 'show' : ''}>
+                    {section.items.map((item, i) => (
+                      <li key={i}><a href="#">{item}</a></li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
             </ul>
           </div>
-          <button id='QuickLink-button' onClick={toggleQuickLinks}>
-            Quick Links
-            <span><FontAwesomeIcon icon={isQuickLinksOpen ? faChevronUp : faChevronDown} /></span>
-          </button>
-          <div id='quicklink-mobile' className={`collapse ${isQuickLinksOpen ? 'show' : ''}`}>
-          <ul id='dropdown-menu'>
-            <li><a href="#" title='myDSU' target='_self' >MyDSU</a></li>
-            <li><a href="#" title='Maps' target='_self' >Maps</a></li>
-            <li><a href="#" title='people Directory' target='_self' >People Directory</a></li>
-            <li><a href="#" title='Email' target='_self' >Email</a></li>
-            <li><a href="#" title='Careers' target='_self' >Careers</a></li>
-            <li><a href="#" title='Library' target='_self' >Library</a></li>
-            <li><a href="#" title='A-Z Index' target='_self' >A-Z Index</a></li>
-            <li><a href="#" title='News' target='_self' >News</a></li>
-            <li><a href="#" title='Events' target='_self' >Events</a></li>
-            <li><a href="#" title='Safety at DSU' target='_self' >Safety at DSU</a></li>
-            </ul>
-          </div>
-          <ul id="navbar-list">
-            {[
-              { title: "About DSU", items: ["Leadership", "Mission", "Experience DSU", "DSU and the State of Delsco", "History", "Facts & Figures", "DSU Community", "Values"] },
-              { title: "Prospective Students", items: ["Undergraduate Admissions", "Success After DSU", "Graduate Admissions", "Professional & Continuing Studies", "Online Programs"] },
-              { title: "Current Students", items: ["Academic Calendar", "Housing", "Finances & Aid", "Advising", "Safety", "Student Diversity & Inclusion", "Student Wellbeing", "Student Support", "Green Lantern Traditions"] },
-              { title: "Faculty & Staff", items: ["Human Resources", "Experts", "Employee Resources", "Faculty Affairs", "Media Experts"] },
-              { title: "Alumni & Friends", items: ["Connect", "Give", "Resources", "About"] },
-              { title: "Academics", items: ["Colleges", "Library", "Programs", "DSU Global", "Registrar"] },
-              { title: "Research & Innovation", items: ["Research At DSU", "Horn Entrepreneurship", "STAR Campus", "Innovation Gateway"] },
-              { title: "Athletics", items: ["GreenLanten.com"] },
-            ].map((section, index) => (
-              <li key={index} onClick={() => toggleDropdown(index)}tabIndex={0} >
-                <div id='navbaralign'>
-                <a href="#">{section.title} </a>
-                <span><FontAwesomeIcon icon={openDropdown === index ? faMinus : faPlus } size='lg' /></span>
-               
-                </div>
-                
-                <ul id='nav-dropdown' className={openDropdown === index ? 'show' : ''}>
-                  {section.items.map((item, i) => (
-                    <li key={i}><a target='_self' href="#">{item}</a></li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
-        </div>
         </div>
       
         <ul className="navbar-list">

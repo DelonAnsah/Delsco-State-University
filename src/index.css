@@ -15,7 +15,7 @@
   transition: left .4s ease-in-out;
 }
 body{
-  background: #fff;
+  background: #EEE;
 }
 .main-header{
   position: relative;
@@ -35,15 +35,4 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width: 320px) and (max-width: 375px){
-  .main-container .headerMain nav{
-    position: absolute;
-    left: -290px;
-    width: 290px;
-    height: 100%;
-    box-sizing: border-box;
-    display: block;
-    top: 50%;
-    padding-left: 0;
-  }
-}
+

@@ -8,12 +8,12 @@
   margin: 0 auto;
   max-width: 1170px;
 }
-.parent-component{
+.news-component{
   margin-top: 20px;
   padding: 15px;
   margin-bottom: 30px;
 }
-.parent-component h2{
+.news-component h2{
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
@@ -92,7 +92,7 @@
 .dsudailynews ul li{
   list-style-type: none;
   padding: 0;
-  font-size: 15px;
+  font-size: 16px;
   margin-left: 15px;
   margin-bottom: 10px;
   line-height: 20px;
@@ -133,4 +133,40 @@
 .news-button:hover{
   background-color: #004D40;
   color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+  .news-panel{
+    padding: 25px 0;
+  }
+  .news-container{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .news-component{
+    margin-top: 0;
+  }
+  .news-row{
+    flex-direction: column;
+  }
+  .news-image{
+    width: 100%;
+    display: block;
+  }
+  .news-rightcolumn .footer .content{
+    display: inline-block;
+  }
+  .news-link{
+    margin-top: 30px;
+  }
+  .news-today{
+    margin-top: 30px;
+  }
+  .news-button a{
+    font-weight: 600;
+  }
 }

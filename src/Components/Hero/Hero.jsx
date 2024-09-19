@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import './Hero.css'
 import Hero_video from '../../assets/Hero-v.mp4'
 import hero_play from '../../assets/hero-play.png'
+import hero_image from '../../assets/mobileHero 2.jpg'
 
 const Hero = () => {
   const [isplaying, setIsPlaying] = useState(false);
@@ -24,6 +25,8 @@ const Hero = () => {
         !isplaying && (
         <img className={`hero-play ${isplaying? '' : 'pulse'}`} src={hero_play}alt="play" onClick={handlePlayPause} />
         )}
+    
+      <img src={hero_image} className='hero-image' alt="sky lantern"  title='welcome to DSU'/>
       
       <div className='hero-text'>
         <h1>YOUR FUTURE STARTS NOW. </h1>

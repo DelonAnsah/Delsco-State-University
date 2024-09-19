@@ -49,7 +49,7 @@
 .visit-button{
   display: block;
   position: absolute;
-  right: 50%;
+  left: 45%;
   bottom: 25px;
   width: 34px;
   font-size: 20px;
@@ -117,4 +117,35 @@
   text-align: center;
   margin-top: 20px;
   color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+  .visit-panel{
+    padding: 25px 0;
+  }
+  .visit-container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+  }
+  .visit-firstheading{
+    font-size: 26px;
+  }
+  .visit-secondheading{
+    margin-top: 0;
+  }
+  .visit-thirdheading{
+    font-size: 18px;
+  }
+  .visit-row{
+    flex-direction: column;
+  }
+  .visit-column img{
+   width: 100%;
+   display: block;
+  }
+
 }

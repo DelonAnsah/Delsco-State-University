@@ -1,16 +1,18 @@
 import React from 'react'
 import './News.css'
-import newslogo from '../../assets/News.png'
+import newslogo from '../../assets/DSU daily.png'
 import basketball from '../../assets/Gallery_4.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons/faAngleRight';
 
 const News = () => {
   return (
     <div className='news-panel'>
       <div className="news-container">
-        <div className="parent-component">
+        <div className="news-component">
           <img src={newslogo} alt="DSU Daily" />
           <h2>The lastest news from Delsco State University</h2>
-          </div>
+        </div>
           <div className="news-row">
             <div className="news-rightcolumn">
               <a href="#"><img className='news-image' src={basketball} alt="Men Basketball" width='100%'  /></a>
@@ -22,7 +24,7 @@ const News = () => {
                   <p>DSU makes historical run in the 2024 NCAA Men's Basketball Championship.</p>
                 </div>
                 <div className="calloutLink">
-                  <a href="#">Read More About DSU Basketball Team</a>
+                  <a href="#">Read More</a>
                 </div>
               </div>
             </div>
@@ -43,7 +45,7 @@ const News = () => {
                 </ul>
               </div>
               <div className="news-link" >
-                <p className='News-more'><button className='news-button'><a href="#">More DSU News &gt;</a></button></p>
+                <p className='News-more'><button className='news-button'><a href="#">More DSU News <FontAwesomeIcon icon={ faAngleRight }/></a></button></p>
               </div>
             </div>
           </div>

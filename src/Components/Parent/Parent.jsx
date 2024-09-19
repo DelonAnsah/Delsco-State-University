@@ -1,6 +1,8 @@
 import React from 'react'
 import './Parent.css'
 import family from '../../assets/family.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons/faAngleRight';
 
 const Parent = () => {
   return (
@@ -15,11 +17,11 @@ const Parent = () => {
             <br />
             <h4>
               <button  className='parent-button' type='button'>
-                GET REGISTRATION AND TICKETING INFO &gt;
+                GET REGISTRATION AND TICKETING INFO <FontAwesomeIcon icon={ faAngleRight }/>
               </button>
             </h4>
           </div>
-          <div className="parent-column">
+          <div className="parent-column parent-image">
             <img src={family} alt="" width='100%' />
           </div>
         </div>

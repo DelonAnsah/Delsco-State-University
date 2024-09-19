@@ -1,5 +1,7 @@
 import React from 'react'
 import './Equity.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons/faAngleRight';
 
 const Equity = () => {
   return (
@@ -12,7 +14,7 @@ const Equity = () => {
           </h4>
           <div className='equity-link'>
             <h4>
-            <button className='equity-button'><a href="#">Office of Equity & Inclusion &gt; </a></button>
+            <button className='equity-button'><a href="#">Office of Equity & Inclusion <FontAwesomeIcon icon={ faAngleRight }/></a></button>
             </h4>
           </div> 
         </div>

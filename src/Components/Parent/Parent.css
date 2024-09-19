@@ -41,6 +41,9 @@
   margin: 5px 0;
   line-height: normal;
 }
+.parent-column img{
+  width: 100%;
+}
 .parent-button{
   background-color: #fff;
   font-size: 20px;
@@ -61,4 +64,33 @@
 .parent-column img{
   max-width: none;
   display: block;
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+  .parent-panel{
+    padding: 25px 0 5px;
+  }
+  .parent-container{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .parent-row{
+    flex-direction: column;
+  }
+  .parent-component h2{
+    font-size: 26px !important;
+  }
+  .parent-image{
+    margin-top: 20px;
+  }
+  .parent-image img{
+    width: 100%;
+  }
+  .parent-button{
+    font-weight: 600;
+  }
 }

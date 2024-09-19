@@ -49,14 +49,15 @@
   vertical-align: middle;
   padding-left: 10px;
 }
-.fa-home{
+.dsu-home a{
   font-size: 24px;
   color: #2ECC71;
 }
-.dsu-home{
+.dsu-home span{
   color: #434343;
   font-family: "montserrat";
   font-weight: 300;
+  font-size: 18px;
 }
 .footer-panel hr{
   width: 100%;
@@ -92,7 +93,7 @@
   font-size: 14px;
   margin: 7.5px 0px ;
 }
-.fa-map-marker{
+.fontawesome{
   margin-left: 5px;
   color: #00AA66;
 }
@@ -100,18 +101,24 @@
   color: #434343;
 }
 .social-icons{
-  padding: 10px 0;
+  padding: 10px 0 10px 0;
   text-align: center;
 }
 .social-icons-desktop{
 display: flex;
+justify-content: space-between;
+width: 190px;
 padding-left: 0;
 font-size: 14px;
 }
-.fa-brands {
-  font-size: 25px;
+.social-icons-desktop img{
   height: 20px;
-  margin-right: 20px;
+  object-fit: contain;
+}
+.fa-brands {
+  font-size: 20px;
+  height: 20px;
+  margin-right: px;
 }
 .footer-fulllinks{
   margin: 7px auto;
@@ -133,4 +140,57 @@ font-size: 14px;
 .footer-linkItem a{
   text-decoration: underline;
   color: #2ECC71;
+}
+.connect{
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+  .footer-container{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .carousel{
+    display: none;
+  }
+  .footer-logo{
+    left: 58%;
+  }
+  .footer-logo img{
+    width: 50%;
+  }
+  .dsu-home span{
+    font-size: 14px;
+  }
+  .footer-rowlinks{
+    flex-direction: column;
+  }
+  .social-icons-desktop{
+   margin-left: 45px;
+  }
+  .connect{
+    display: block;
+  }
+ .footerhr{
+  display: none;
+ }
+ #li{
+  font-size: 12px;
+ }
+ .li-padding{
+  padding-bottom: 60px !important;
+ }
+ .linksheader h3{
+  padding-top: 10px;
+  font-size: 15px;
+ }
+ .linksheader ul li{
+  font-size: 12px;
+  padding: 7.5px 0;
+ }
+
 }

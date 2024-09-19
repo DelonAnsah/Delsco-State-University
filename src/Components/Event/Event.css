@@ -103,3 +103,27 @@
 .event-rightcolumn img{
   display: block;
 }
+
+@media (min-width: 320px) and (max-width: 375px){
+  .event-panel{
+    padding: 25px 0 5px;
+  }
+  .event-container{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .event-row{
+    flex-direction: column;
+  }
+  .event-text h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .event-rightcolumn{
+    margin: 30px 0;
+  }
+}

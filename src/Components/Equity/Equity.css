@@ -30,7 +30,6 @@
 }
 .equity-button{
     background: #ffffff;
-    
     font-size: 20px;
     color: #145A32;
     font-weight: normal;
@@ -49,4 +48,21 @@
 .equity-button:hover{
   background-color: #004D40;
   color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+  .equity-panel{
+    padding: 25px 0;
+  }
+  .equity-container{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .equity-textcomponent h3{
+    font-size: 23px;
+  }
 }
