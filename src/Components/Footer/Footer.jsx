@@ -4,6 +4,11 @@ import footerlogo from '../../assets/FooterLogo2.png'
 import footerimage_2 from '../../assets/footerimage4.jpeg'
 import footerimage_3 from '../../assets/footerimage3.jpg'
 import footerimage_4 from '../../assets/footerimage6.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse,faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import instagram from '../../assets/instagram.png'
+import facebook from '../../assets/facebook.png'
+import  X from '../../assets/X.png'
 
 
 
@@ -38,7 +43,7 @@ const Footer = () => {
           </div>
           <div className="dsu-home">
             <a href="#home">
-            <i class="fa fa-home"></i>
+              <FontAwesomeIcon icon={ faHouse }/>
             &nbsp;
             <span>DSU Home</span>
             </a>
@@ -82,22 +87,24 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
+              <hr className='connect'/>
               <div className="footer-columnlinks">
                 <div className="linksheader">
                   <h3>Connect</h3>
                   <ul>
-                    <li><a href="">Contact Us</a></li>
-                    <li id='li'>Delsco State University Spintex, DSU 00233 GHA
-                    <i class="fa fa-map-marker"></i>
+                    <li><a href="#">Contact Us</a></li>
+                    <li id='li'>Delsco State University Spintex,00233 GHA
+                    <FontAwesomeIcon icon={  faMapMarkerAlt } className='fontawesome'/>
                     </li>
-                    <li id='li' >P: +233-24967-8172</li>
+                    <li id='li' className='li-padding' >P: +233-24967-8172</li>
+                    <hr className='connect'/>
                     <li className='social-icons'>
                       <div className="social-icons-desktop">
-                        <li><a href="#" class="fa-brands fa-instagram"></a></li>
-                        <li><a href="#" class="fa-brands fa-square-facebook"></a></li>
+                        <li><a href="#"><img src={instagram} alt="instagram" /></a></li>
+                        <li><a href="#"><img src={facebook} alt="" /></a></li>
                         <li><a href="#" class="fa-brands fa-linkedin"></a></li>
                         <li><a href="#" class="fa-brands fa-youtube"></a></li>
-                        <li><a href="#" ><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><img src={X} alt="X" /></a></li>
                       </div>
                     </li>
                   </ul>
@@ -105,7 +112,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <hr />
+          <hr className='footerhr'/>
       </div>
       <div className='footer-fulllinks'>
             <div className="footer-container-fluid">

@@ -47,9 +47,10 @@
   margin-left: 10px;
 }
 .column img{
+  width: 100%;
+  display: block;
   border-radius: 50%;
   border: 8px solid #fff;
-  display: block;
 }
 .fouth-heading{
   text-align: left;
@@ -74,7 +75,39 @@
 margin-bottom: 20px;
 }
 
-@media (min-width: 320px) and (max-width: 375px){
+@media (min-width: 900px) and (max-width: 1024px){
+  .buttonlinks-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-right: 7px;
+  }
+  .button-links{
+    padding: 20px;
+  }
+  .column img{
+    border-radius: 0;
+    border: none !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .row{
+    flex-wrap: wrap;
+  }
+  .column{
+    flex: 1 1 45%;
+  }
+  .column3{
+    flex: 1 1 100%;
+  }
+  .column img{
+    border-radius: 0;
+    border: 2px solid #fff;
+  }
+}
+
+@media (max-width: 768px){
   .openHouse-panel{
     padding: 25px 0;
   }

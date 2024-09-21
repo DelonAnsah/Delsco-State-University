@@ -249,7 +249,25 @@ button span{
   opacity: 1;
   height: auto;
 }
-@media (min-width: 320px) and (max-width: 375px) {
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-toggle{
+    width: 36px;
+    font-size: 36px;
+    display: block;
+    top: -86px;
+   }
+   .navbar-list{
+    display: none;
+  }
+   #header-icons,
+   #QuickLink-button{
+    display: none;
+   }
+}
+
+
+@media (max-width: 768px){
   .nav-toggle{
     display: block;
    }
@@ -259,4 +277,11 @@ button span{
   .sidebar{
     display: block;
   }
+  #QuickLink-button{
+    font-size: 20px;
+  }
+  #navbar-list li a{
+    font-size: 16px;
+  }
 }
+

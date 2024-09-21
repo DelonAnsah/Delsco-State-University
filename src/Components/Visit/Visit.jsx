@@ -1,7 +1,7 @@
 import React from 'react'
 import './Visit.css'
-import visit1 from '../../assets/visit2.jpg'
-import visit2 from '../../assets/Gallery_5.jpg'
+import visit1 from '../../assets/Footerimage4.jpeg'
+import visit2 from '../../assets/Gallery_10.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons/faAngleRight';
 
@@ -34,7 +34,7 @@ const Visit = () => {
           <div className="visit-column">
           <a href="#">
             <img src={visit2} alt="Canteen" />
-            <button className='visit-button ' type='button'><FontAwesomeIcon icon={ faAngleRight }/></button>
+            <button className='visit-button ' type='button'><FontAwesomeIcon icon={ faAngleRight }></FontAwesomeIcon></button>
           </a>
           <div className="visit-imageText">
           <p>Explore From Home</p>

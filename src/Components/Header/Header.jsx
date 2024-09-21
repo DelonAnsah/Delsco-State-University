@@ -23,14 +23,9 @@ const Header = () => {
         </div>
         <div className="header-icons">
           <ul className='icon-list'>
-            <li className='header-icon' title='search'>
-              <a target='self' href="#">
-               <img title='search' src={search_icon} alt="search" />
-              </a>
-            </li>
-            <li className='header-icon' title='Give'>
-              <a target='self' href="#">
-                <img title='give' src={give_icon} alt="give" />
+          <li className='header-icon'>
+              <a target='self' href="#" title='visit'>
+               <img title='visit' src={visit_icon} alt="visit" />
               </a>
             </li>
             <li className='header-icon'>
@@ -38,9 +33,14 @@ const Header = () => {
                 <img title='apply' src={apply_icon} alt="apply" />
               </a>
             </li>
-            <li className='header-icon'>
-              <a target='self' href="#" title='visit'>
-               <img title='visit' src={visit_icon} alt="visit" />
+            <li className='header-icon' title='Give'>
+              <a target='self' href="#">
+                <img title='give' src={give_icon} alt="give" />
+              </a>
+            </li>
+            <li className='header-icon' title='search'>
+              <a target='self' href="#">
+               <img title='search' src={search_icon} alt="search" />
               </a>
             </li>
           </ul>

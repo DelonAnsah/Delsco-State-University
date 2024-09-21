@@ -21,13 +21,18 @@
 }
 .news-row{
   display: flex;
+  
 }
 .news-rightcolumn{
- flex: 90%;
+ flex: 55%;
  padding: 10px;
  margin-right: 30px;
  background-color: #fff;
  border: 1px solid #E0E0E0;
+ height: 540px;
+}
+.news-leftcolumn{
+  flex: 45%;
 }
 .footer{
   position: relative;
@@ -135,7 +140,19 @@
   color: #fff;
 }
 
-@media (min-width: 320px) and (max-width: 375px){
+@media (min-width: 900px) and (max-width: 1024px){
+  .news-rightcolumn{
+    height: 450px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .news-rightcolumn{
+    height: 390px;
+  }
+}
+
+@media (max-width: 768px){
   .news-panel{
     padding: 25px 0;
   }

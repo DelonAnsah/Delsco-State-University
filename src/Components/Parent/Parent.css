@@ -34,6 +34,7 @@
   margin: 5px 0;
   line-height: 36px;
 }
+.parent-h,
 .parent-column h4{
   font-weight: 400;
   font-size: 20px;
@@ -66,7 +67,19 @@
   display: block;
 }
 
-@media (min-width: 320px) and (max-width: 375px){
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .parent-h{
+    margin-top: 30px !important;
+    margin-bottom: 5px;
+    line-height: 1.2 !important;
+  }
+  .parent-button{
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 768px){
   .parent-panel{
     padding: 25px 0 5px;
   }

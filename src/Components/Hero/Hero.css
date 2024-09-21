@@ -52,7 +52,15 @@
   width: 100%;
   display: none;
 }
-@media (min-width: 320px) and (max-width: 375px){
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .hero-text{
+    width: 80%;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 768px){
  .hero-video,
  .hero-play{
   display: none;

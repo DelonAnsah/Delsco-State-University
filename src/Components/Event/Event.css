@@ -48,7 +48,6 @@
   display: flex;
   border: 1px solid #CCC;
 }
-
 .icon-col{
   padding: 10px 5px 0;
   background-color: #A1D99B;
@@ -56,11 +55,9 @@
 .icon{
   background-color: #C7E9C0;
 }
-
 .fa-calendar{
   color: #145A32;
 }
-
 .event-details{
   flex:content ;
   border-left: 2px solid #ccc;
@@ -104,7 +101,8 @@
   display: block;
 }
 
-@media (min-width: 320px) and (max-width: 375px){
+
+@media (max-width: 768px){
   .event-panel{
     padding: 25px 0 5px;
   }

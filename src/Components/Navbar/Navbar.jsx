@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isQuickLinksOpen ? 'open' : ''}`}> 
       <button className='nav-toggle' onClick={toggleSidebar}>
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon className='faBars' icon={faBars} />
        </button>
       <div className= "navbar-container">
         <div className={`sidebar-overlay ${isSidebarOpen ? "open" : ""}`} onClick={closeSidebar}      >
