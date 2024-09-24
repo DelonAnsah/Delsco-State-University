@@ -31,7 +31,7 @@ const Hero = () => {
           />
         )}
     
-      <img src={hero_image} className='hero-image' alt="sky lantern"  title='welcome to DSU'/>
+      <img src={hero_image} className='hero-image' alt="sky lantern"  loading='lazy' title='welcome to DSU'/>
       
       <div className='hero-text'>
         <h1>YOUR FUTURE STARTS NOW. </h1>
