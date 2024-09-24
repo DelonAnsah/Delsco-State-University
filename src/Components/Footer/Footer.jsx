@@ -1,9 +1,9 @@
 import React from 'react'
 import './Footer.css'
 import footerlogo from '../../assets/FooterLogo2.png'
-import footerimage_2 from '../../assets/Visit2.jpg'
-import footerimage_3 from '../../assets/footerimage3.jpg'
-import footerimage_4 from '../../assets/footerimage6.jpg'
+import footerimage_1 from '../../assets/Footerimage_1.jpg'
+import footerimage_2 from '../../assets/footerimage_2.jpg'
+import footerimage_3 from '../../assets/footerimage_3.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse,faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import instagram from '../../assets/instagram.png'
@@ -24,19 +24,19 @@ const Footer = () => {
           <div className="carousel">
             <div className="carousel-item">
               <a href="#">
-              <img src={footerimage_2} alt="Taking Pictures on Campus" loading='lazy' width='100%'/>
+              <img src={footerimage_1} alt="Taking Pictures on Campus" loading='lazy' width='100%'/>
               <div className='carousel-content'><p>Explore DSU in photos</p></div>
               </a>
             </div>
             <div className="carousel-item">
             <a href="#">
-            <img src={footerimage_3} alt="Browsing the internet" loading='lazy' width='100%'/>
+            <img src={footerimage_2} alt="Browsing the internet" loading='lazy' width='100%'/>
             <div className='carousel-content'><p>Undergraduate Major Finder</p></div>
             </a>
             </div>
             <div className="carousel-item">
             <a href="#">
-            <img src={footerimage_4} alt="test lab" loading='lazy' width='100%' />
+            <img src={footerimage_3} alt="test lab" loading='lazy' width='100%' />
             <div className='carousel-content'><p>Graduate Program Finder</p></div>
             </a>
             </div>

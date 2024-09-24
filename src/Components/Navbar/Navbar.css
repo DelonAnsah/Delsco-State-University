@@ -84,7 +84,7 @@
   width: 100%;
   background-clip: padding-box;
   height: 360px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
   border: 1px solid ;
 }
 .nav-dropdown li a{
