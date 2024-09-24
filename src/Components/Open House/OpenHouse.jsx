@@ -27,10 +27,10 @@ const OpenHouse = () => {
         </div>
         <div className='row'>
           <div className='column'>
-            <img className='image'  src={openhouse2} alt="DSU Building" />
+            <img className='image'  src={openhouse2} alt="DSU Building" loading='lazy'/>
           </div>
           <div className='column'>
-            <img className='image'  src={openhouse1}alt="DSU students after Class " />
+            <img className='image'  src={openhouse1}alt="DSU students after Class " loading='lazy' />
           </div>
           <div className='column3'>
             <p className='fouth-heading'>Our first <span className='font-change'>Green and Golden </span>open house is on Saturday, November 2, 2024 at 7:30 AM until 4:00 PM.

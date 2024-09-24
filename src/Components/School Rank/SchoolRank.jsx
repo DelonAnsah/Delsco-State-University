@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import './SchoolRank.css'
 import next_icon from '../../assets/Forward-Icon.png'
 import prev_icon from '../../assets/Prev-icon.png'
@@ -31,12 +31,12 @@ const SchoolRank = () => {
   const prevSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide === 0 ? maxSlideIndex : prevSlide - 1));
   }
-   
-  const getDisplayedSlides = () => {
+
+  const displayedSlides = useMemo(() => {
     const start = currentSlide * maxSlidesToShow;
     return slides.slice(start, start + maxSlidesToShow);
-  }
-
+  }, [currentSlide, slides]);
+   
   useEffect(() => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
@@ -53,12 +53,12 @@ const SchoolRank = () => {
          </div>
          <div className='slideshow-container'>
           <div>
-          <button className='prev' type='button' onClick={prevSlide}>
-            <img src={prev_icon} alt="" />
+          <button className='prev' type='button' onClick={prevSlide} aria-label='previous Slide'>
+            <img src={prev_icon} alt="Previous Slide" />
           </button>
           </div>
           <div className='slider'>
-            {getDisplayedSlides().map((slide, index) => (
+            {displayedSlides.map((slide, index) => (
               <div key={index} className={`mySlides ${slide.style}`} >
                 <div className='title'>
                   <p>{slide.title}</p>
@@ -70,8 +70,8 @@ const SchoolRank = () => {
             ))}
            </div>
            <div>
-           <button className='next' type='button' onClick={nextSlide}>
-            <img src={next_icon} alt="next" />
+           <button className='next' type='button' onClick={nextSlide} aria-label='Next Slide'>
+            <img src={next_icon} alt="Next Slide" />
            </button>
            </div>
           </div>

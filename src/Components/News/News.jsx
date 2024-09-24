@@ -14,8 +14,8 @@ const News = () => {
           <h2>The lastest news from Delsco State University</h2>
         </div>
           <div className="news-row">
-            <div className="news-rightcolumn">
-              <a href="#"><img className='news-image' src={basketball} alt="Men Basketball" width='100%'  /></a>
+            <div className="news-leftcolumn">
+              <a href="#"><img className='news-image' src={basketball} alt="DSU Men's Basketball Team playing" loading='lazy' width='100%'  /></a>
               <div className="footer">
                 <div className="tittle">
                   <p>DSU Men Basketball Team </p>
@@ -28,7 +28,7 @@ const News = () => {
                 </div>
               </div>
             </div>
-            <div className="news-leftcolumn">
+            <div className="news-rightcolumn">
               <div className="news-today">
                 <h2 className='news-story'>Today's Stories</h2>
               </div >
@@ -45,7 +45,11 @@ const News = () => {
                 </ul>
               </div>
               <div className="news-link" >
-                <p className='News-more'><button className='news-button'><a href="#">More DSU News <FontAwesomeIcon icon={ faAngleRight }/></a></button></p>
+                <p className='News-more'>
+                  <button className='news-button'>
+                    <a href="#">More DSU News <FontAwesomeIcon icon={ faAngleRight }/></a>
+                  </button>
+                </p>
               </div>
             </div>
           </div>

@@ -42,7 +42,7 @@
   bottom: 3px;
   background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
-  padding: 10px 0;
+  padding: 12px 0;
   font-family: "montserrat";
   font-weight: 300;
 }
@@ -108,19 +108,19 @@
   text-align: center;
 }
 .social-icons-desktop{
-display: flex;
-justify-content: space-between;
-width: 190px;
-padding-left: 0;
-font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-left: 0;
+  font-size: 20px;
 }
 .social-icons-desktop img{
-  height: 20px;
+  height: 25px;
   object-fit: contain;
 }
 .fa-brands {
-  font-size: 20px;
-  height: 20px;
+  font-size: 25px;
+  height: 25px;
   margin-right: px;
 }
 .footer-fulllinks{
@@ -175,7 +175,11 @@ font-size: 14px;
     margin-left: auto;
   }
   .carousel{
-    display: none;
+    display: block;
+  }
+  .carousel-item{
+    flex: 100%;
+    margin: 5px 0;
   }
   .footer-logo{
     left: 58%;
@@ -190,7 +194,8 @@ font-size: 14px;
     flex-direction: column;
   }
   .social-icons-desktop{
-   margin-left: 35%;
+    gap: 30px;
+   justify-content: center;
   }
   .connect{
     display: block;
@@ -202,7 +207,7 @@ font-size: 14px;
   font-size: 12px;
  }
  .li-padding{
-  padding-bottom: 60px !important;
+  padding-bottom: 20px !important;
  }
  .linksheader h3{
   padding-top: 10px;
@@ -212,10 +217,4 @@ font-size: 14px;
   font-size: 12px;
   padding: 7.5px 0;
  }
-
-}
-@media (max-width: 480px){
-  .social-icons-desktop{
-    margin-left: 45px;
-   }
 }

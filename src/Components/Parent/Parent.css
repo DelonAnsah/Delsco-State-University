@@ -95,7 +95,13 @@
     flex-direction: column;
   }
   .parent-component h2{
-    font-size: 26px !important;
+    font-size: 24px !important;
+  }
+  .parent-component h3{
+    font-size: 20px;
+  }
+  .parent-h{
+    font-size: 18px;
   }
   .parent-image{
     margin-top: 20px;
@@ -104,6 +110,8 @@
     width: 100%;
   }
   .parent-button{
+    font-size: 18px;
     font-weight: 600;
+    padding: 12px;
   }
 }

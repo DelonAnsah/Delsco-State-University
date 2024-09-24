@@ -7,7 +7,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons/faAngleRight';
 
 const Visit = () => {
   return (
-    <div className='visit-panel'>
+    <section className='visit-panel'>
       <div className="visit-container">
         <div className='visit-component'>
         <h2 className='visit-firstheading'>Visit Delsco State University</h2>
@@ -23,7 +23,7 @@ const Visit = () => {
         <div className='visit-row'>
           <div className="visit-column">
             <a href="#">
-              <img src={visit1} alt="statue park" />
+              <img src={visit1} alt="Touring DSU" loading='lazy'/>
               <button className='visit-button ' type='button'><FontAwesomeIcon icon={ faAngleRight }/></button>
             </a>
             <div className="visit-imageText">
@@ -33,7 +33,7 @@ const Visit = () => {
           </div>
           <div className="visit-column">
           <a href="#">
-            <img src={visit2} alt="Canteen" />
+            <img src={visit2} alt="DSU Library" loading='lazy' />
             <button className='visit-button ' type='button'><FontAwesomeIcon icon={ faAngleRight }></FontAwesomeIcon></button>
           </a>
           <div className="visit-imageText">
@@ -56,7 +56,7 @@ const Visit = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

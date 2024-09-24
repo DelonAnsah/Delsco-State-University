@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import footerlogo from '../../assets/FooterLogo2.png'
-import footerimage_2 from '../../assets/footerimage4.jpeg'
+import footerimage_2 from '../../assets/Visit2.jpg'
 import footerimage_3 from '../../assets/footerimage3.jpg'
 import footerimage_4 from '../../assets/footerimage6.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,7 +14,7 @@ import  X from '../../assets/X.png'
 
 const Footer = () => {
   return (
-    <div className='footer-panel'>
+    <footer className='footer-panel'>
       <div className="footer-container">
         <div className="footer-header">
           <div className='footer-logo'>
@@ -24,19 +24,19 @@ const Footer = () => {
           <div className="carousel">
             <div className="carousel-item">
               <a href="#">
-              <img src={footerimage_2} alt="Taking Pictures on Campus" width='100%'/>
+              <img src={footerimage_2} alt="Taking Pictures on Campus" loading='lazy' width='100%'/>
               <div className='carousel-content'><p>Explore DSU in photos</p></div>
               </a>
             </div>
             <div className="carousel-item">
             <a href="#">
-            <img src={footerimage_3} alt="Browsing the internet" width='100%'/>
+            <img src={footerimage_3} alt="Browsing the internet" loading='lazy' width='100%'/>
             <div className='carousel-content'><p>Undergraduate Major Finder</p></div>
             </a>
             </div>
             <div className="carousel-item">
             <a href="#">
-            <img src={footerimage_4} alt="test lab" width='100%' />
+            <img src={footerimage_4} alt="test lab" loading='lazy' width='100%' />
             <div className='carousel-content'><p>Graduate Program Finder</p></div>
             </a>
             </div>
@@ -100,11 +100,11 @@ const Footer = () => {
                     <hr className='connect'/>
                     <li className='social-icons'>
                       <div className="social-icons-desktop">
-                        <li><a href="#"><img src={instagram} alt="instagram" /></a></li>
-                        <li><a href="#"><img src={facebook} alt="" /></a></li>
-                        <li><a href="#" class="fa-brands fa-linkedin"></a></li>
+                        <li><a href="#"><img src={instagram} alt="Instagram icon" /></a></li>
+                        <li><a href="#"><img src={facebook} alt="Facebook icon" /></a></li>
+                        <li><a href="#" class="fa-brands fa-linkedin" ></a></li>
                         <li><a href="#" class="fa-brands fa-youtube"></a></li>
-                        <li><a href="#"><img src={X} alt="X" /></a></li>
+                        <li><a href="#"><img src={X} alt="X icon" /></a></li>
                       </div>
                     </li>
                   </ul>
@@ -128,7 +128,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-    </div>
+    </footer>
   )
 }
 

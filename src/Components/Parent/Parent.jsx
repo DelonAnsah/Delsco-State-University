@@ -22,7 +22,7 @@ const Parent = () => {
             </h4>
           </div>
           <div className="parent-column parent-image">
-            <img src={family} alt="family reunion"  />
+            <img src={family} alt="Family reunion during Parents and Family Weekend" loading='lazy'  />
           </div>
         </div>
       </div>

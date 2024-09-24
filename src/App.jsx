@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './Components/Header/Header'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
@@ -13,12 +13,13 @@ import Footer from './Components/Footer/Footer'
 
 
 const App = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   
   return (
-    <div className='main-container'>
+    <div className={`main-container ${isSidebarOpen ? 'sidebar-open' : ''}`}>
       <div className='main-header'>
       <Header/>
-      <Navbar/>
+      <Navbar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
       </div>
       <Hero/>
       <OpenHouse/>

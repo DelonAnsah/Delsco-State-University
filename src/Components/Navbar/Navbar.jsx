@@ -12,8 +12,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
 
-const Navbar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -24,7 +23,7 @@ const Navbar = () => {
     setIsQuickLinksOpen(!isQuickLinksOpen);
   };
   const toggleDropdown = (index) => {
-    setOpenDropdown(openDropdown === index ? null : index)
+    setOpenDropdown(openDropdown === index ? null : index);
   };
 
   const closeSidebar =(e) => {

@@ -5,8 +5,6 @@ import visit_icon from '../../assets/icon-header-visit.png'
 import apply_icon from '../../assets/icon-header-apply.png'
 import give_icon from '../../assets/icon-header-give.png'
 import search_icon from '../../assets/icon-header-search.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
 

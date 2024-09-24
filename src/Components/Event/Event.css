@@ -18,6 +18,11 @@
 .event-rightcolumn{
   flex-basis: 52%;
 }
+.event-rightcolumn img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
 .event-text{
   padding: 15px;
   margin-top: 20px;
@@ -97,6 +102,9 @@
 .events-calendar h3 a{
   color: #145A32;
 }
+.events-calendar h3 a:focus{
+  outline: 2px dashed #145A32;
+}
 .event-rightcolumn img{
   display: block;
 }
@@ -113,6 +121,9 @@
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .event-details span, .event-details a{
+    font-size: 18px;
   }
   .event-row{
     flex-direction: column;

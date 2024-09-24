@@ -15,9 +15,9 @@ const Event = () => {
               <div className='events-widget'>
                 <div className='calender-container'>
                   <ul className='event-list'>
-                    <li className='event-item'>
+                    <li className='event-item' role='listitem' aria-label='Event on Oct 1, 2024: Homecoming Week Kickoff'>
                       <div className='icon-col'>
-                        <a href="#">
+                        <a href="#" aria-label='view Homecoming Week Kickoff Event'>
                          <FontAwesomeIcon className='fa-calendar' icon={ faCalendarAlt }/>
                         </a>
                       </div>
@@ -96,7 +96,7 @@ const Event = () => {
             </div>
           </div>
           <div className="event-rightcolumn">
-            <img src={eventimage} alt="Calender-icon" width='100%' />
+            <img src={eventimage} alt="Campus Event at Delsco State University" loading='lazy' />
           </div>
         </div>
       </div>

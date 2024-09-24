@@ -15,7 +15,7 @@
   justify-content: center;
   text-align: left;
   line-height: 14px;
-  margin: 7.5px - 15px;
+ 
 }
 .sidebar{
   position: fixed;
@@ -24,7 +24,7 @@
   width: 290px;
   height: 100%;
   background-color: #EEE;
-  transition: left 0.3s ease-in-out;
+  transition: left 0.2s ease-in-out;
   z-index: 1000;
 }
 .sidebar.open {
@@ -84,6 +84,7 @@
   width: 100%;
   background-clip: padding-box;
   height: 360px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid ;
 }
 .nav-dropdown li a{
@@ -143,11 +144,12 @@
 }
 #QuickLink-button span {
   position: absolute;
+  color: #2ECC71;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  border-left: 2px solid #1F7A55;
-  padding: 5px 12px;
+  border-left: 1px solid #2ECC71;
+  padding: 5px 10px;
   z-index: 1;
 }
 #header-icons{
@@ -274,6 +276,13 @@ button span{
   .navbar-list{
     display: none;
   }
+  .navbar-list li:hover .nav-dropdown{
+    display: none;
+  }
+  .navbar-list li .nav-dropdown.show{
+    display: block;
+  }
+
   .sidebar{
     display: block;
   }

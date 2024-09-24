@@ -58,6 +58,10 @@
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid white;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+.visit-button:hover{
+  background: rgba(0, 0, 0, 0.7);
 }
 .visit-imageText{
   position: absolute;
