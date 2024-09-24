@@ -1,7 +1,7 @@
 import React from 'react'
 import './OpenHouse.css'
 import openhouse1 from '../../assets/Gallery_9.jpg'
-import openhouse2 from '../../assets/footerimage2.jpg'
+import openhouse2 from '../../assets/OpenHouseimage_2.jpg'
 
 const OpenHouse = () => {
   return (
